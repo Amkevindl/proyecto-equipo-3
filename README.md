@@ -46,14 +46,14 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 #### Sitios de referencia
 
-- [Renová tu vestidor](https://www.renovatuvestidor.com/)
+- [Renová tu vestidor](https://www.renovatuvestidor.com/) <br>
 Página a partir de la cual surgió la idea de Pilcha. Si bien identificamos que resulta poco amigable al usuario –cambia de tamaño a medida que se scrollea, es muy difícil el proceso de subir fotos de productos–, sus funcionalidades nos sirven como base para armar nuestro sitio. Nos parecen interesantes los filtros que ofrece, la información relacionada a cada producto que ya se muestra en la home y que de la opción de ofertar en lugar de directamente comprar. 
-- [MercadoLibre](https://www.mercadolibre.com.ar/)
+- [MercadoLibre](https://www.mercadolibre.com.ar/)<br>
 Por lo intuitiva de la página, la cantidad de filtros que ofrece para facilitarle al usuario la busqueda de productos y el hecho de que utiliza información del usuario (favoritos, productos visitados) para sugerir items en la home.
-- [Crate&Barrel](https://www.crateandbarrel.com/)
+- [Crate&Barrel](https://www.crateandbarrel.com/)<br>
 Nos gusta la estética de la web en general, incluyendo lo sobrio del diseño y colores, la ubicación del nombre, el menu de productos ya desplegado horizontalmente, que haya dos solapas diferentes para dividir secciones (Crate&Barrel y Crate&Kids) y que en la home muestre cuadros con los productos lookeados y el # para acceder a fotos de usuarios reales usando las prendas compradas en la web. 
-- [Amazon](https://www.amazon.com/)
-- [Homebanking Banco Galicia](https://www.onlinebanking.bancogalicia.com.ar/login)
+- [Amazon](https://www.amazon.com/)<br>
+- [Homebanking Banco Galicia](https://www.onlinebanking.bancogalicia.com.ar/login)<br>
 Referencia para la página de log in/sign up por lo minimalista y por la idea de incluir un slider que vaya cambiando, mostrando obras de artistas argentinos. 
-- [Ikea](https://www.ikea.com/)
+- [Ikea](https://www.ikea.com/)<br>
 
