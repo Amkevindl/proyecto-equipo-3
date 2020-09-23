@@ -55,7 +55,7 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Herramientas
 
 - [Trello para la gestion de las tareas](https://trello.com)
-- [Figma para la creación de los wireframes] (https://figma.com)
+- [Figma para la creación de los wireframes](https://figma.com)
 - 
 
 
@@ -63,4 +63,9 @@ Ingresar a ```http://localhost/proyecto/index.html```
 #### Sitios de referencia
 
 - [Renová tu vestidor](https://www.renovatuvestidor.com/)
-- [Modatex](https://www.modatex.com.ar/)
+- [MercadoLibre](https://www.modatex.com.ar/)
+- [Crate&Barrel]
+- [Amazon]
+- [Homebanking Banco Galicia]
+- [Ikea]
+
