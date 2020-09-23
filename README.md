@@ -12,6 +12,7 @@ En el futuro queremos expandir este desarrollo y permitir que los usuarios pueda
 ###### Victoria Pécora
 Tiene 26 años, estudió Lic. en Economía Empresarial y se desempeña como analista de Banca de Inversión en un banco. Quiso incursionar en la programación por curiosidad y porque le gustaría poder trabajar desde cualquier lado y ser su propia jefa (#herbalife). De un día para otro se convirtió en fan de la Formula 1. Es amante de las pastas seguidas de una buena siesta. 
 
+Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
 ###### Kevin Aguirre Martinez
 Gastronomíco de profesión, hace ya 6 años desempeñándose en el área operativa. Le gusta trabajar en equipo, guiar y acompañar en el aprendizaje.
