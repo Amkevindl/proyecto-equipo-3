@@ -55,6 +55,6 @@ Ingresar a ```http://localhost/proyecto/index.html```
 - [Homebanking Banco Galicia](https://www.onlinebanking.bancogalicia.com.ar/login)<br>
 >Referencia para la página de log in/sign up por lo minimalista y por la idea de incluir un slider que vaya cambiando, mostrando obras de artistas argentinos. <br>
 - [Ikea](https://www.ikea.com/)<br>
->De esta página nos gustó el diseño que a pesar de tener una amplia variedad de productos es fácil de navegar en la misma, estando todo bien agrupado en distintas secciones. En la descripción de cada producto, se puede acceder a un menú desplegable en el cual aparecen detalles, materiales, embalaje y más opciones lo cual aporta información a la compra
+>De esta página nos gustó el diseño que a pesar de tener una amplia variedad de productos es fácil de navegar en la misma, estando todo bien agrupado en distintas secciones. En la descripción de cada producto, se puede acceder a un menú desplegable en el cual aparecen detalles, materiales, embalaje y más opciones lo cual aporta información a la compra<br>
 -[Wood Market](https://woodmarket.com.ar/)<br>
 >Similar a Create&Barrel en lo minimalista pero empleando colores mas cálidos. Nos gusta la fuente utilizada, el diseño del slider y el footer, la estructura de la página de detalle del producto y la estética general del sitio.
