@@ -1,7 +1,7 @@
 ## Grupo III - PILCHA
 
 Este proyecto se trata de un e-commerce orientado a personas interesadas en comprar indumentaria de segunda mano. Los colaboradores de **PILCHA** hacen una selección de prendas en buen estado y son subidas a la plataforma. <br>
-Cuando comenzamos a planificar este proyecto nos propusimos desarrollar una plataforma donde los usuarios puedan encontrar exclusivamente indumentaria -incluyendo calzado y accesorios- para todas las edades y géneros, y que a la vez sea lo más intuitiva y fácil de utilizar. <br>
+Cuando comenzamos a planificar este proyecto nos propusimos desarrollar una plataforma donde los usuarios puedan encontrar exclusivamente indumentaria -incluyendo calzado y accesorios- para todas las edades y géneros, y que a la vez sea lo más intuitiva y fácil de utilizar posible. <br>
 **PILCHA** apunta a un público mixto pero que comparte el interes de tener un consumo consciente y sustentable. <br>
 En el futuro queremos expandir este desarrollo y permitir que los usuarios puedan también vender su indumentaria, creando sus 'vestidores' online. 
 
@@ -56,5 +56,5 @@ Ingresar a ```http://localhost/proyecto/index.html```
 >Referencia para la página de log in/sign up por lo minimalista y por la idea de incluir un slider que vaya cambiando, mostrando obras de artistas argentinos. <br>
 - [Ikea](https://www.ikea.com/)<br>
 >De esta página nos gustó el diseño que a pesar de tener una amplia variedad de productos es fácil de navegar en la misma, estando todo bien agrupado en distintas secciones. En la descripción de cada producto, se puede acceder a un menú desplegable en el cual aparecen detalles, materiales, embalaje y más opciones lo cual aporta información a la compra<br>
--[Wood Market](https://woodmarket.com.ar/)<br>
+- [Wood Market](https://woodmarket.com.ar/)<br>
 >Similar a Create&Barrel en lo minimalista pero empleando colores mas cálidos. Nos gusta la fuente utilizada, el diseño del slider y el footer, la estructura de la página de detalle del producto y la estética general del sitio.
