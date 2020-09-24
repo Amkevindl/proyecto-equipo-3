@@ -50,7 +50,7 @@ Ingresar a ```http://localhost/proyecto/index.html```
 >Por lo intuitiva de la página, la cantidad de filtros que ofrece para facilitarle al usuario la busqueda de productos y el hecho de que utiliza información del usuario (favoritos, productos visitados) para sugerir items en la home.<br>
 - [Crate&Barrel](https://www.crateandbarrel.com/)<br>
 >Nos gusta la estética de la web en general, incluyendo lo sobrio del diseño y colores, la ubicación del nombre, el menu de productos ya desplegado horizontalmente, que haya dos solapas diferentes para dividir secciones (Crate&Barrel y Crate&Kids) y que en la home muestre cuadros con los productos lookeados y el # para acceder a fotos de usuarios reales usando las prendas compradas en la web. <br>
-- [Amazon](https://www.amazon.com/)<br
+- [Amazon](https://www.amazon.com/)<br>
 >Es una pagina muy intuitiva y sencilla para el usuario, con varias funciones para comparar precios, ver la reputación del producto y opciones de envío. Tiene un carrito de compras sencillo en el cual se pueden agregar o quitar productor, guardarlos para otro momento y finalmente realizar el pago de manera rápida. Por ultimo Amazon tiene lo que se llama Smile.Amazon, que con las compras que uno realiza, Amazon le dona un 0,07% a la ONG que uno elija sin costo alguno para el comprador
 - [Homebanking Banco Galicia](https://www.onlinebanking.bancogalicia.com.ar/login)<br>
 >Referencia para la página de log in/sign up por lo minimalista y por la idea de incluir un slider que vaya cambiando, mostrando obras de artistas argentinos. <br>
