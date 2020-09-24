@@ -1,7 +1,7 @@
 ## Grupo III - PILCHA
 
 Este proyecto se trata de un e-commerce orientado a personas interesadas en comprar indumentaria de segunda mano. Los colaboradores de **PILCHA** hacen una selección de prendas en buen estado y son subidas a la plataforma. <br>
-Cuando comenzamos a planificar este proyecto nos propusimos desarrollar una plataforma donde los usuarios puedan encontrar exclusivamente indumentaria -incluyendo calzado y accesorios- para todas las edades y géneros, y que a la vez sea lo más intuitiva y de fácil usabilidad posible. <br>
+Cuando comenzamos a planificar este proyecto nos propusimos desarrollar una plataforma donde los usuarios puedan encontrar exclusivamente indumentaria -incluyendo calzado y accesorios- para todas las edades y géneros, y que a la vez sea lo más intuitiva y fácil de utilizar. <br>
 **PILCHA** apunta a un público mixto pero que comparte el interes de tener un consumo consciente y sustentable. <br>
 En el futuro queremos expandir este desarrollo y permitir que los usuarios puedan también vender su indumentaria, creando sus 'vestidores' online. 
 
