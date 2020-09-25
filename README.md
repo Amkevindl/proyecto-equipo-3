@@ -20,6 +20,8 @@ Por último pero no menos importante, ama los gatos.
 ###### Daniel Leguizamón
 Trabaja en el area de sistemas hace 15 años en diferentes sectores como soporte técnico, microinformática y redes. Hizo un par de cursos de desarrollo pero decidió estudiarlo a fondo para poder trabajar en forma remota desde cualquier lugar sin depender de ir a una oficina. Y también para evitar que los usuarios le pregunten por qué la compu no prende cuando simplemente está desenchufada.
 
+## Diseño
+https://www.figma.com/file/4VQbBUTvzmFkue27wFtQJH/Proyecto-grupo-3?node-id=0%3A1
 
 ## Instalación
 
