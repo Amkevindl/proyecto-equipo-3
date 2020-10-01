@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-equipo-3",
+  "version": "1.0.0",
+  "description": "Este proyecto se trata de un e-commerce orientado a personas interesadas en comprar indumentaria de segunda mano. Los colaboradores de **PILCHA** hacen una selección de prendas en buen estado y son subidas a la plataforma. <br>\r Cuando comenzamos a planificar este proyecto nos propusimos desarrollar una plataforma donde los usuarios puedan encontrar exclusivamente indumentaria -incluyendo calzado y accesorios- para todas las edades y géneros, y que a la vez sea lo más intuitiva y fácil de utilizar posible. <br>\r **PILCHA** apunta a un público mixto pero que comparte el interes de tener un consumo consciente y sustentable. <br>\r En el futuro queremos expandir este desarrollo y permitir que los usuarios puedan también vender su indumentaria, creando sus 'vestidores' online.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amkevindl/proyecto-equipo-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amkevindl/proyecto-equipo-3/issues"
+  },
+  "homepage": "https://github.com/Amkevindl/proyecto-equipo-3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

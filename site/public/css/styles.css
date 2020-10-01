@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.link-hm {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.align {
+    text-align: center;
+}
