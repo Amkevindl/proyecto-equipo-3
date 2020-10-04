@@ -6,27 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
     <div class="div-hm d-flex">
-        <a href="#">HOMBRES</a>
-        <a href="#">MUJERES</a>
+        <div class="div-hm-h dflex">
+            <a href="#">Hombres</a>
+        </div>
+        <div class="div-hm-m dflex">
+            <a href="#">Mujeres</a>
+        </div>
     </div>
-    <header class="d-flex container justify-between">
-        <div class="search">
-            <input type="text">
-        </div>
-        <div>
-            <p>LOGO</p>
-        </div>
-        <div class="header-a-caja">
-            <a href="">Log in</a>
-            <a href="">Sign in</a>
-            <a href="">Favoritos</a>
-            <a href="">Carrito</a>
+    <header class="d-flex">
+        <!--contenedor del header divido en tres secciones-->        
+        <div class="d-flex header-principal">
+            <!--cuadro de busqueda-->
+            <div class="d-flex search">
+                <form class="icon-search" id="form-busqueda" action="">
+                    <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <!--cuadro de busqueda-->
+
+            <div class="d-flex logo">
+                <img src="img/logo.PNG" alt="Logo pilcha">
+            </div>
+
+            <div class="d-flex header-a-caja">
+                <a href="">Log in <i class="far fa-user-circle"></i></a>
+                <!--<a href="">Sign in</a>-->
+                <a href="">Favoritos <i class="fas fa-heart"></i></a>
+                <a href="">Carrito <i class="fas fa-shopping-cart"></i></a>
 
             </div>
-        </header>
+        </div>
+        <!--contenedor del header divido en tres secciones-->
+    </header>
     <nav class="sections d-flex justify-between">
         <div>
             <a href="#">INDUMENTARIA</a>

@@ -13,38 +13,100 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
 
 .div-hm{
-    background-color: gray;
+    background-color: black;
+    height: 30px;
     justify-content: center;
+
 }/*barra hombres mujeres color y centrado */
-.div-hm a{
+.div-hm .div-hm-h a{
+    margin-left: 4px;
+    text-align: center;
     color: black;
+    background-color: white;
+    width: 120px;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 6px;
+}
+.div-hm .div-hm-m a{
+        margin-left: 4px;
+        text-align: center;
+        color: white;
+        background-color: none;
+        width: 120px;
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 6px;
+
 }/*barra hombres y mujeres color links */
 
 header{
-    background-color: lightgray;
-}/*color de fondo y tamanio, se quita cuando este el header completo */
-header p{
-    font-size: 50px;
-}/*tamano color y fuente del logo en header */
-
-.search{padding: 3%;}
-.search input{
-    font-size:  16px;
-    padding: 10px;
-    border-radius: 3px;
+    background-color: white;
+    display: block;
     width: 100%;
-    border: 1px gray solid;
+    box-sizing: border-box;
+    justify-content: center;
+}/*color de fondo y tamanio, se quita cuando este el header completo */
+
+.header-principal {
+    box-sizing: border-box;
+    padding: 20px 112px 17px 125px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
 
 }
 
+.search{
+    flex-grow: 1;
+
+}
+
+.search{padding: 3%;}
+
+.search input{
+    box-sizing: border-box;
+    color: #222;
+    font-size: 1em;
+    padding: o 30px 0 10px;
+    border-radius: 3px;
+    width: 100%;
+    border: solid 1px #666;
+    vertical-align: middle;
+}
+
+.search .icon-search{
+    position: absolute;
+}
+
+.header-principal .logo{
+    position: static;
+    height: 60%;
+    width: 60%;
+    flex-grow: 2;
+}
+
 .container{
-    display: flex;
+    flex-grow: 1;
 }/*divs del header uno al lado del otro */
 
 .header-a-caja{
     margin: 1%;
-    background-color: grey;
+    background-color: none;
 }
+
+.slider img{
+    width: 100%;
+
+}
+
 .sections{
     background-color: lightgray ;
     padding: 3%;
