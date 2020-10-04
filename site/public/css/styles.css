@@ -1,25 +1,76 @@
-* {
-    margin: 0;
-    padding:0;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
+}/*bordes y demas*/
+
+input:focus{outline: 0;}/*quita recuadro azul de los imputs*/
+a{text-decoration: none; color: black;}/*sin subrayado en links*/
+
+.d-flex{display: flex;}/*Flex box*/
+.justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
+.justify-center{justify-content: center;}/*para centrar los divs y demas*/
+
+.div-hm{
+    background-color: gray;
+    justify-content: center;
+}/*barra hombres mujeres color y centrado */
+.div-hm a{
+    color: black;
+}/*barra hombres y mujeres color links */
+
+header{
+    background-color: lightgray;
+}/*color de fondo y tamanio, se quita cuando este el header completo */
+header p{
+    font-size: 50px;
+}/*tamano color y fuente del logo en header */
+
+.search{padding: 3%;}
+.search input{
+    font-size:  16px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px gray solid;
+
 }
 
-.d-flex {
+.container{
     display: flex;
+}/*divs del header uno al lado del otro */
+
+.header-a-caja{
+    margin: 1%;
+    background-color: grey;
+}
+.sections{
+    background-color: lightgray ;
+    padding: 3%;
+}
+.sections a{
+    margin-left: 0px;
+    padding: 15px;
 }
 
-.bg-color {
-    background-color: black;
+.products{
+    width: 80%;
+    margin: 12px auto;
+    font-size: 16px;
 }
 
-.link-hm {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
+.products img{width: 100%;}
+.products .products-card{
+    max-width: 25%;
+    margin: 1%;
+    background-color: white;
 }
 
-.align {
-    text-align: center;
+.footer{
+    background-color: lightgray;
+    height: 100px;
+}
+.footer p{
+    font-size: 32px;
 }
