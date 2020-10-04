@@ -11,6 +11,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .d-flex{display: flex;}/*Flex box*/
 .justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
+.align-items{align-items: center;}
+.grow{flex-grow: 1;}
 
 .div-hm{
     background-color: black;
@@ -46,36 +48,27 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 }/*barra hombres y mujeres color links */
 
+.div-hm .div-hm-m:hover a{
+    background-color: lightgray;
+    color: black;
+}
+
 header{
     background-color: white;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
+    padding: 0 4%;
+
+
 }/*color de fondo y tamanio, se quita cuando este el header completo */
 
-.header-principal {
-    box-sizing: border-box;
-    padding: 20px 112px 17px 125px;
-    width: 90%;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-
-}
-
 .search{
-    flex-grow: 1;
-
+    padding: 3%;
+    width: 33%;
 }
-
-.search{padding: 3%;}
 
 .search input{
-    box-sizing: border-box;
     color: #222;
     font-size: 1em;
-    padding: o 30px 0 10px;
+    padding: 0 30px 0 10px;
     border-radius: 3px;
     width: 100%;
     border: solid 1px #666;
@@ -85,21 +78,27 @@ header{
 .search .icon-search{
     position: absolute;
 }
-
-.header-principal .logo{
-    position: static;
-    height: 60%;
-    width: 60%;
-    flex-grow: 2;
+.logo{
+    align-self: center;
+    width: 33%;
 }
 
+.logo img{
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 .container{
-    flex-grow: 1;
+    display: flex;
 }/*divs del header uno al lado del otro */
 
 .header-a-caja{
-    margin: 1%;
     background-color: none;
+    width: 33%;
+    justify-content: flex-end;
 }
 
 .slider img{
@@ -108,11 +107,14 @@ header{
 }
 
 .sections{
-    background-color: lightgray ;
-    padding: 3%;
+    background-color: none ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 90%;
+    margin: auto;
+    
 }
 .sections a{
-    margin-left: 0px;
     padding: 15px;
 }
 
