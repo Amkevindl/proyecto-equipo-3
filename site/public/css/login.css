@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.fg-1 {
+    flex-grow: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-self {
+    align-self: center;
+}
+
+body {
+    background-color: white;
+}
+
+.bckg-red {
+    background-color: red;
+}
+
+.position-img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.img-size {
+    height: 8vh;
+    width: auto;
+}
+
+.img-container {
+    height: 100vh;
+}
+
+.square {
+    border: 1px solid none;
+    border-radius: 5px; 
+    background-color: #ebebeb;
+    padding: 30px 20px; 
+    width: 35%; 
+}
+
+.square input {
+    width:100%;
+    background-color: #ebebeb;
+    border: none;
+    border-bottom: 1px solid gray; 
+}
+
+input:focus {
+    outline:0;
+}
+
+.square button {
+    width: 80%;
+    padding: 5px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.p-35 {
+    padding:35px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.p-10 {
+    padding-bottom:20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.txt-agn {
+    text-align: center;
+}
+
+.randomimg {
+    background-size: cover;
+    background-image: url("../img/Fondo1.PNG");
+    background-position: center;
+    min-height: 400px;
+}
+
