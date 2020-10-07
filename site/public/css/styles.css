@@ -12,32 +12,295 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
 .align-items{align-items: center;}
-.grow{flex-grow: 1;}
+.f-grow1{flex-grow: 1;}
+.f-grow4{flex-grow: 4;}
+.f-wrap{flex-wrap: wrap;}
+.f-column{flex-direction: column;}
 
-.div-hm{
-    background-color: black;
-    height: 30px;
-    justify-content: center;
 
-}/*barra hombres mujeres color y centrado */
-.div-hm .div-hm-h a{
-    margin-left: 4px;
-    text-align: center;
-    color: black;
+
+.header-mobile{
     background-color: white;
-    width: 120px;
-    position: relative;
-    height: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 6px;
+    padding: 0 4%;
 }
-.div-hm .div-hm-m a{
+
+.header-a-caja{
+    background-color: none;
+
+    justify-content: flex-end;
+}
+
+.products{
+
+    margin: 12px auto;
+    font-size: 16px;
+}
+
+
+@media (max-width: 460px) {
+    #header-mobile{
+        display: initial;
+    }
+    #header-desktop{
+        display: none;
+    }
+
+    /*BOTON HAMBURGUESA*/
+    /* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    button#menu:focus + nav#superior {
+        /* Si es pulsado el boton, mostramos el nav.
+        Esto lo puedo hacer porque adquiere el foco. */
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+    
+    nav#superior ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav#superior ul a {
+        display: block;
+        width: 8em;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+    
+    nav#superior ul a:hover {
+        background: lightgray;
+    }
+    
+
+	nav#superior {
+        display: none;
+    }
+	nav#superior ul {
+        flex-direction: column;
+        position: absolute;
+    }
+
+    nav#superior ul a {
+        display: block;
+        width: 8em;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+
+    /*FIN BOTON HAMBURGUESA*/
+
+    /*SE OCULTAN TODOS LOS MENUS QUE NO SE DEBEN VER*/
+    .div-hm{
+        display: none;
+    }
+
+    
+    .products-links{
+        display: none;
+    }
+
+    /*PANEL DE BUSQUEDA*/
+    .search{
+        padding: 3%;
+        background-color: lightgray;
+        height: 40px;
+        align-items: center;
+        box-sizing: content-box;
+    }
+    
+    .search input{
+        color: #222;
+        font-size: 1em;
+        padding: 0 30px 0 10px;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        border: none;
+        vertical-align: middle;
+    }
+    
+    .search .icon-search{
+        position: relative;
+        color: grey;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        height: 30px;
+        padding-right: 15px;
+    }
+    
+    header p{
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .logo{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+
+    /*MENU DESTACADOS*/
+
+    button#menu-destacados:focus + nav#nav-destacados {
+        /* Si es pulsado el boton, mostramos el nav.
+        Esto lo puedo hacer porque adquiere el foco. */
+        display: block;
+        position: fixed;
+    }
+
+    nav#nav-destacados ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav#nav-destacados ul {
+        flex-direction: column;
+        position: absolute;
+    }
+    nav#nav-destacados ul a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+
+    nav#nav-destacados ul a:hover {
+        background: lightgray;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 80%;
+    
+    }
+
+
+
+    .destacados{
+        padding-top: 20px;
+    }
+    .destacados p{
+        margin-left: 35%;
+
+    }
+
+    .destacados button{
+        width: 20px;
+        border: none;
+        background-color: white;
+
+    }
+
+    /*FIN MENU DESTACADOS*/
+
+    .products img{width: 100%;}
+
+    .products .products-card{
+    max-width: 25%;
+    margin: 1%;
+    background-color: white;
+}
+
+}
+
+@media (min-width: 460px){
+    /*ESTILOS PARA DESKTOP*/
+
+    #header-mobile{
+        display: none;
+    }
+    #header-desktop{
+        display: initial;
+        width: 80%;
+    }
+    header{
+        background-color: white;
+        padding: 0 4% 0 4%;
+
+    }/*color de fondo y tamanio, se quita cuando este el header completo */
+
+    .search{
+        padding: 3%;
+        background-color:white;
+        height: 40px;
+        align-items: center;
+        box-sizing: content-box;
+    }
+    
+    .search input{
+        color: #222;
+        font-size: 1em;
+        padding: 0 30px 0 10px;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        vertical-align: middle;
+    }
+    
+    .search .icon-search{
+        position: absolute;
+        color: grey;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        height: 30px;
+        padding-right: 15px;
+    }
+    .logo{
+
+    }
+
+    .logo img{
+        width: 60%;
+        margin-left: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .header-a-caja{
+        background-color: none;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+
+    /*barra hombres mujeres color y centrado */
+    .div-hm{
+        background-color: black;
+        height: 30px;
+        justify-content: center;
+    }
+
+    .div-hm .div-hm-h a{
         margin-left: 4px;
         text-align: center;
-        color: white;
-        background-color: none;
+        color: black;
+        background-color: white;
         width: 120px;
         position: relative;
         height: 100%;
@@ -45,84 +308,63 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
         padding-top: 6px;
-
-}/*barra hombres y mujeres color links */
-
-.div-hm .div-hm-m:hover a{
-    background-color: lightgray;
-    color: black;
-}
-
-header{
-    background-color: white;
-    padding: 0 4%;
-
-
-}/*color de fondo y tamanio, se quita cuando este el header completo */
-
-.search{
-    padding: 3%;
-    width: 33%;
-}
-
-.search input{
-    color: #222;
-    font-size: 1em;
-    padding: 0 30px 0 10px;
-    border-radius: 3px;
-    width: 100%;
-    border: solid 1px #666;
-    vertical-align: middle;
-}
-
-.search .icon-search{
-    position: absolute;
-}
-.logo{
-    align-self: center;
-    width: 33%;
-}
-
-.logo img{
-    width: 50%;
-    margin-left: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-.container{
-    display: flex;
-}/*divs del header uno al lado del otro */
-
-.header-a-caja{
-    background-color: none;
-    width: 33%;
-    justify-content: flex-end;
-}
-
-.slider img{
-    width: 100%;
-
-}
-
-.sections{
-    background-color: none ;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 90%;
-    margin: auto;
+    }
+    .div-hm .div-hm-m a{
+            margin-left: 4px;
+            text-align: center;
+            color: white;
+            background-color: none;
+            width: 120px;
+            position: relative;
+            height: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 6px;
     
-}
-.sections a{
-    padding: 15px;
+    }/*barra hombres y mujeres color links */
+    
+    .div-hm .div-hm-m:hover a{
+        background-color: lightgray;
+        color: black;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 500px;
+    
+    }
+
+    button#menu {
+	/* Ocultamos el boton en escritorio */
+    display: none;
+
 }
 
-.products{
-    width: 80%;
-    margin: 12px auto;
-    font-size: 16px;
-}
+    /* MENU DESTACADOS*/
+
+    button#menu-destacados {
+    /* Ocultamos el boton en escritorio */
+        display: none;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    button#menu-destacados {
+        display: none;
+    }
+    nav#nav-destacados {
+        display: none;
+    }
+
+    #destacados-mobile{
+        display: none;
+    }
+
+    #destacados{
+        display: initial;
+    }
 
 .products img{width: 100%;}
 .products .products-card{
@@ -137,4 +379,7 @@ header{
 }
 .footer p{
     font-size: 32px;
+}
+
+
 }
