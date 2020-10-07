@@ -93,7 +93,7 @@ button:focus {
 }
 
 .h-70 {
-    height: 70vh;
+    height: 80vh;
 }
 
 .p-35 {
@@ -132,3 +132,18 @@ button:focus {
     min-height: 400px;
 }
 
+@media (max-width: 360px) {
+    .square {
+        width:100%;
+        position: relative;
+        right: -17px;
+        top: -30px;
+        z-index: 1;
+    }
+    .w-40 {
+        width:30%;
+    }
+    .w-60 {
+        width:90%;
+    }
+}

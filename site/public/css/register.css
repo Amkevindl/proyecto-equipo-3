@@ -116,3 +116,15 @@ input:focus {
 button:focus {
     outline:0;
 }
+
+@media (max-width:360px) {
+    .square {
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+
+    .square .dataentry {
+        background-color: white;
+    }
+}
