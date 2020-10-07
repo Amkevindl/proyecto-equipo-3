@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+}
+
+.d-flex {
+    display:flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.img-container {
+    height: 40vh;
+}
+
+.logo-size {
+    height: 8vh;
+    width: auto;
+}
+
+.p-35 {
+    padding:35px;
+}
+
+.pt-35 {
+    padding-top:35px;
+}
+
+.position-square {
+    position:relative;
+    top:-90px;
+}
+
+.position-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.randomimg {
+    background-size: cover;
+    background-image: url("../img/Fondo1.PNG");
+    background-position: center;
+}
+
+.h-60 {
+    height: 60vh;
+}
+
+.txt-agn {
+    text-align: center;
+}
+
+.txt-welcome {
+    font-weight:bold;
+    font-size: 1.3em;
+}
+
+.txt-tyc {
+    font-size: 0.8em;
+}
+
+.square {
+    background-color: #ebebeb;
+    border: 1px solid none;
+    border-radius: 5px; 
+    padding: 35px 20px; 
+    width: 40%; 
+    margin:auto;
+
+}
+
+.square .dataentry {
+    width:45%;
+    background-color: #ebebeb;
+    border: none;
+    border-bottom: 1px solid gray; 
+    margin: 20px 0px;
+    font-size: 0.95em;
+}
+
+.square .dataentry:nth-child(4) {
+    width: 90%;
+}
+
+.square button {
+    width: 80%;
+    padding: 8px;
+    margin: 35px auto 0px auto;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    outline:0;
+}
+
+button:focus {
+    outline:0;
+}
+
+@media (max-width:360px) {
+    .square {
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+
+    .square .dataentry {
+        background-color: white;
+    }
+}
