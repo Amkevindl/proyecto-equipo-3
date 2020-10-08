@@ -12,12 +12,68 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
 .align-items{align-items: center;}
+.align-center {align-self: center;}
 .f-grow1{flex-grow: 1;}
 .f-grow4{flex-grow: 4;}
 .f-wrap{flex-wrap: wrap;}
 .f-column{flex-direction: column;}
 
+.txt-agn {
+    text-align: center;
+}
+.main-body {
+    width:95%;
+    margin: 10px auto;
+}
 
+.h-30 {
+    height: 30vh;
+}
+
+.h-15 {
+    height: 15vh;
+}
+
+.h-18 {
+    height: 18vh;
+}
+
+.h-10 {
+    height: 10vh;
+}
+
+.w-49 {
+    width: 48.5%;
+}
+
+.h-50 {
+    height:50%;
+}
+
+.ptb-10 {
+    padding: 10px 0px;
+}
+.bckg-red {
+    background-color: red;
+}
+
+.bckg-blue {
+    background-color: blue;
+}
+
+.bckg-green {
+    background-color: green;
+}
+
+.photo img{
+    width: 100%;
+    height: 90%;
+
+}
+
+.mb-1 {
+    margin-bottom: 1vh;
+}
 
 .header-mobile{
     background-color: white;
