@@ -18,6 +18,11 @@ app.get('/register', function (req,res) {
     res.sendFile (file);
 })
 
+app.get('/productDetail', function (req,res) {
+    let file = path.resolve('./vistas/productDetail.html');
+    res.sendFile (file);
+})
+
 app.get('*', function (req,res) {
     if (req.url.includes('.')) { 
     let file = path.resolve('public/' + req.url)
