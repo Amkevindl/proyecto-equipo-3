@@ -18,8 +18,13 @@ app.get('/register', function (req,res) {
     res.sendFile (file);
 })
 
+<<<<<<< HEAD
 app.get('/productDetail', function (req,res) {
     let file = path.resolve('./vistas/productDetail.html');
+=======
+app.get('/productcart', function (req,res) {
+    let file = path.resolve('./vistas/productCart.html');
+>>>>>>> 54151dae8214264e2cac742479b87dbe7acf4ff1
     res.sendFile (file);
 })
 

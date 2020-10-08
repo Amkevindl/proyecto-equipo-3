@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="/css/productCart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <div class="div-hm d-flex">
+        <div class="div-hm-h dflex">
+            <a href="#">Hombres</a>
+        </div>
+        <div class="div-hm-m dflex">
+            <a href="#">Mujeres</a>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header id="header-mobile" class="d-flex f-column">
+        <div class="header-mobile d-flex justify-between align-items">
+            <button id="menu"><i class="fas fa-bars"></i></button>
+            <nav id="superior">	
+                <ul>
+                    <li><a href="#">Indumentaria</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+
+
+            <p><i class="fas fa-user"></i></p>
+
+
+            <img class="logo" src="img/logo.PNG" alt="logo">
+
+
+            <p><i class="fas fa-heart"></i></p>
+
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+        <div>
+            <div class="search">
+                <form class="d-flex icon-search" id="form-busqueda" action="">
+                    <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    
+    </header>
+    <header id="header-desktop">
+    <div class="d-flex align-items justify-between">        
+        <!--cuadro de busqueda-->
+        <div class="search">
+            <form class="icon-search" id="form-busqueda" action="">
+                <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <!--cuadro de busqueda-->
+
+        <div class="logo">
+            <img src="img/logo.PNG" alt="Logo pilcha">
+        </div>
+
+        <div class="d-flex header-a-caja">
+            <a href="">Log in <i class="far fa-user-circle"></i></a>
+            <a href="">Sign in <i class="far fa-user-circle"></i></a>
+            <a href="">Favoritos <i class="fas fa-heart"></i></a>
+            <a href="">Carrito <i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <!--contenedor del header divido en tres secciones-->
+    </header>
+
+    <main class="main-body bckg-red">
+        <div class="d-flex f-wrap justify-between h-30 mb-1">
+            <div class="bckg-blue w-49 photo">
+                <img src="img/slider1.jpg">
+            </div>
+            <div class="bckg-green w-49 ptb-10">
+                <div class="descrsup d-flex f-wrap h-50 justify-between bckg-blue">
+                    <div class="descrsupleft w-49">
+                        <p> Nombre </p>
+                        <p> Marca </p>
+                        <p> Talle </p>
+                    </div>
+                    <div class="descrsupright w-49 align-center">
+                        <p class="txt-agn">  -1+ </p>
+                    </div>
+                </div>
+                <div class="descrinf d-flex f-wrap h-50 justify-between">
+                    <div class="descrinfleft">
+                        <p> Precio </p>
+                    </div>
+                    <div class="descrinfright">
+                        <button type="submit"> Eliminar producto</button>
+                        <button type="submit"> Guardar para después</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-15 bckg-blue mb-1">
+        <!-- te gustaria agregar algo mas, flex-->
+        </div>
+        <div class="h-18 mb-1">
+        <!--resumen de la compra-->
+        </div>
+    </main> 
+    
+    <footer class="h-15 bckg-blue">
+
+    </footer>
+</body>
+</html>

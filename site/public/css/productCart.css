@@ -11,16 +11,74 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .d-flex{display: flex;}/*Flex box*/
 .justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
-.justify-end{justify-content: flex-end;}
-.justify-around{justify-content: space-around;}
 .align-items{align-items: center;}
+.align-center {align-self: center;}
 .f-grow1{flex-grow: 1;}
 .f-grow4{flex-grow: 4;}
 .f-wrap{flex-wrap: wrap;}
 .f-column{flex-direction: column;}
-.f-row{flex-direction: row;}
 
+.txt-agn {
+    text-align: center;
+}
+.main-body {
+    width:95%;
+    margin: 10px auto;
+}
 
+.h-30 {
+    height: 30vh;
+}
+
+.h-15 {
+    height: 15vh;
+}
+
+.h-18 {
+    height: 18vh;
+}
+
+.h-10 {
+    height: 10vh;
+}
+
+.w-49 {
+    width: 48.5%;
+}
+
+.h-50 {
+    height:50%;
+}
+
+.ptb-10 {
+    padding: 10px 0px;
+}
+.bckg-red {
+    background-color: red;
+}
+
+.bckg-blue {
+    background-color: blue;
+}
+
+.bckg-green {
+    background-color: green;
+}
+
+.photo img{
+    width: 100%;
+    height: 90%;
+
+}
+
+.mb-1 {
+    margin-bottom: 1vh;
+}
+
+.header-mobile{
+    background-color: white;
+    padding: 0 4%;
+}
 
 .header-a-caja{
     background-color: none;
@@ -28,21 +86,19 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     justify-content: flex-end;
 }
 
+.products{
+
+    margin: 12px auto;
+    font-size: 16px;
+}
+
 
 @media (max-width: 460px) {
-    /*VERSION MOBILE*/
     #header-mobile{
         display: initial;
-
     }
     #header-desktop{
         display: none;
-    }
-
-    .header-mobile{
-        background-color: white;
-        padding: 0 4%;
-        height: 50px;
     }
 
     /*BOTON HAMBURGUESA*/
@@ -51,11 +107,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         display: block;
         width: 45px;
         height: 45px;
-        font-size: 30px;
-        background-color: white;
-        border: none;
-        margin: 0px;
-
+        font-size: 20px;
     }
     button#menu:focus + nav#superior {
         /* Si es pulsado el boton, mostramos el nav.
@@ -123,9 +175,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     /*PANEL DE BUSQUEDA*/
     .search{
         padding: 3%;
-        padding-top: 10px;
         background-color: lightgray;
-        height: 30px;
+        height: 40px;
         align-items: center;
         box-sizing: content-box;
     }
@@ -163,30 +214,26 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         height: 50px;
     }
 
-/*-----------HASTA ES EL HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
-
-
     /*MENU DESTACADOS*/
-
-    #nav-destacados{
-        display: none;
-    }
 
     button#menu-destacados:focus + nav#nav-destacados {
         /* Si es pulsado el boton, mostramos el nav.
         Esto lo puedo hacer porque adquiere el foco. */
         display: block;
-        position: relative;
+        position: fixed;
     }
 
     nav#nav-destacados ul {
+        display: flex;
         list-style: none;
+        margin: 0;
+        padding: 0;
         text-align: center;
     }
 
     nav#nav-destacados ul {
         flex-direction: column;
-        position: relative;
+        position: absolute;
     }
     nav#nav-destacados ul a {
         display: block;
@@ -209,9 +256,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     
     }
 
-    #destacados-desktop{
-        display: none;
-    }
+
+
     .destacados{
         padding-top: 20px;
     }
@@ -229,97 +275,18 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
     /*FIN MENU DESTACADOS*/
 
-    .products{
-        width: 100%;
-    }
+    .products img{width: 100%;}
 
     .products .products-card{
-    width: 47%;
-    height: 260px;
-    margin: 2px;
-    background-color: lightgray;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px;
-    }
-
-    .products .products-card img{
-        width: 100%;
-        max-height: 200px;
-        height: 100%;
-        padding: 5px;
-
-    }
-
-    .products .products-card p{
-        text-align: center;
-        margin-top: 4px;
-    }
-
-    .products .products-card .precio{
-        font-weight: bolder;
-        margin-top: 2px;
-    }
-
-    .footer{
-        background-color:#272727;
-        color: #ddd;
-        margin-top: 5px;
-        text-align: center;
-        flex-direction: column;
-
-    }
-
-
-    .footer .forma-pago{
-        margin-top: 15px;
-
-    }
-
-    .footer .forma-pago img{
-        width: 200px;
-        height: 150px;
-        margin-top: 5px;
-    }
-
-    .footer .redes{
-        margin-top: 5px;
-        margin-bottom: 5px;
-
-    }
-
-    .footer .redes img{
-        width: 50px;
-        height: 50px;
-    }
-
-    .footer .imagenes-redes {
-        margin-top: 10px;
-    }
-
-    .copy{
-        font-size: 12px;
-        background-color: black;
-        text-align: left;
-        height: 20px;
-        color: #ddd;
-
-    }
-
-
+    max-width: 25%;
+    margin: 1%;
+    background-color: white;
+}
 
 }
 
-
-
-
 @media (min-width: 460px){
     /*ESTILOS PARA DESKTOP*/
-
-    button#menu {
-        /* Ocultamos el boton en escritorio */
-        display: none;
-    }
 
     #header-mobile{
         display: none;
@@ -327,51 +294,44 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     #header-desktop{
         display: initial;
         width: 80%;
-        margin-bottom: 0;
     }
     header{
         background-color: white;
         padding: 0 4% 0 4%;
 
     }/*color de fondo y tamanio, se quita cuando este el header completo */
-    .contenedor-header{
-        height: 50px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
+
     .search{
+        padding: 3%;
         background-color:white;
-        height: 30px;
+        height: 40px;
         align-items: center;
-        margin-left: 100px;
         box-sizing: content-box;
-        border: 1px solid lightgray;
-        border-radius: 1px;
     }
     
     .search input{
         color: #222;
-        font-size: 15px;
-        padding: 0 00px 0 15px;
-        border: none;
+        font-size: 1em;
+        padding: 0 30px 0 10px;
+        border-radius: 3px;
         width: 100%;
         height: 30px;
+        vertical-align: middle;
     }
     
     .search .icon-search{
-        position: relative;
+        position: absolute;
         color: grey;
         font-size: 20px;
         background-color: white;
         border: none;
         height: 30px;
-        padding-right: 5px;
-
+        padding-right: 15px;
     }
 
     .logo img{
-        width: 30%;
-        margin-left: 28%;
+        width: 60%;
+        margin-left: 45%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -380,14 +340,6 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         background-color: none;
         justify-content: flex-end;
         padding-right: 30px;
-    }
-
-    .links-login a{
-        margin-left: 20px;
-    }
-
-    .links-login a:nth-child(3){
-        margin-right: 40px;
     }
 
     /*barra hombres mujeres color y centrado */
@@ -402,7 +354,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         text-align: center;
         color: black;
         background-color: white;
-        width: 100px;
+        width: 120px;
         position: relative;
         height: 100%;
         display: inline-block;
@@ -415,7 +367,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
             text-align: center;
             color: white;
             background-color: none;
-            width: 100px;
+            width: 120px;
             position: relative;
             height: 100%;
             display: inline-block;
@@ -430,29 +382,18 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         color: black;
     }
 
-    .sections{
-        font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 0px;
-    }
-
-    .sections a{
-        margin-left: 50px;
-    }
-
-    .sections a:nth-child(1){
-        margin-left: 90px;
-    }
-
-/*------ HASTA ACA ES EL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
-
-
-
     .slider img{
         width: 100%;
         height: 500px;
-        margin-top: 0;
+    
     }
+
+    button#menu {
+	/* Ocultamos el boton en escritorio */
+    display: none;
+
+}
+
     /* MENU DESTACADOS*/
 
     button#menu-destacados {
@@ -466,7 +407,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     button#menu-destacados {
         display: none;
     }
-    #nav-destacados {
+    nav#nav-destacados {
         display: none;
     }
 
@@ -474,100 +415,24 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         display: none;
     }
 
-    #destacados-desktop{
-    display: inline;
-    border-bottom: 1px solid black;
-
+    #destacados{
+        display: initial;
     }
 
-    #destacados-desktop nav{
-        border-bottom: 1px solid black;
-        padding-bottom: 10px;
-    }
+.products img{width: 100%;}
+.products .products-card{
+    max-width: 25%;
+    margin: 1%;
+    background-color: white;
+}
 
-    #destacados-desktop nav a{
-        margin-top: 20px;
-    }
-
-    .products{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .products .products-card{
-    width: 20%;
-    height: 400px;
-    margin: 2px;
+.footer{
     background-color: lightgray;
-    align-items: center;
-    font-size: 16px;
-    padding: 3px;
-    }
-
-    .products .products-card img{
-        width: 100%;
-        height: 80%;
-        padding: 5px;
-
-    }
-
-    .products .products-card p{
-        margin-top: 10px;
-        text-align: center;
-        padding: 4px;
-    }
-
-    .products .products-card .precio{
-        font-weight: bolder;
-        margin-top: 4px;
-    }
-
-    .footer{
-        background-color:#272727;
-        color: #ddd;
-        margin-top: 5px;
-        text-align: center;
-        flex-direction: row;
-        justify-content: space-evenly;
-        vertical-align: middle;
-
-    }
-
-
-    .footer .forma-pago{
-        margin-top: 15px;
-
-    }
-
-    .footer .forma-pago img{
-        width: 200px;
-        height: 150px;
-        margin-top: 5px;
-    }
-
-    .footer .redes{
-        margin-top: 15px;
-        margin-bottom: 5px;
-
-    }
-
-    .footer .redes img{
-        width: 50px;
-        height: 50px;
-    }
-
-    .footer .imagenes-redes {
-        margin-top: 10px;
-    }
-
-    .copy{
-        font-size: 12px;
-        background-color: black;
-        text-align: left;
-        height: 20px;
-        color: #ddd;
-
-    }
+    height: 100px;
+}
+.footer p{
+    font-size: 32px;
+}
 
 
 }

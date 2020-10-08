@@ -92,7 +92,7 @@ button:focus {
     width: 40%;
 }
 
-.h-70 {
+.h-80 {
     height: 80vh;
 }
 
@@ -132,7 +132,7 @@ button:focus {
     min-height: 400px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 460px) {
     .square {
         width:100%;
         position: relative;
