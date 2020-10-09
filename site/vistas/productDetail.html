@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pilcha</title>
     <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
@@ -18,7 +19,8 @@
         </div>
     </div>
 
-    <!--Header-->
+    <!--HEADER MOBILE-->
+
     <header id="header-mobile" class="d-flex f-column">
         <div class="header-mobile d-flex justify-between align-items">
             <button id="menu"><i class="fas fa-bars"></i></button>
@@ -53,59 +55,116 @@
         </div>
     
     </header>
+
+    <!--HEADER DESKTOP-->
+
     <header id="header-desktop">
-    <div class="d-flex align-items justify-between">        
+    <div class="contenedor-header d-flex align-items">        
         <!--cuadro de busqueda-->
-        <div class="search">
-            <form class="icon-search" id="form-busqueda" action="">
+        <div class="search f-grow1">
+            <form class="d-flex icon-search" id="form-busqueda" action="">
                 <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
         <!--cuadro de busqueda-->
 
-        <div class="logo">
+        <div class="logo f-grow1">
             <img src="img/logo.PNG" alt="Logo pilcha">
         </div>
 
-        <div class="d-flex header-a-caja">
-            <a href="">Log in <i class="far fa-user-circle"></i></a>
-            <a href="">Sign in <i class="far fa-user-circle"></i></a>
-            <a href="">Favoritos <i class="fas fa-heart"></i></a>
-            <a href="">Carrito <i class="fas fa-shopping-cart"></i></a>
+        <div class="links-login d-flex header-a-caja f-grow1">
+            <!--<a href="">Log in <i class="far fa-user-circle"></i></a>-->
+            <a href="">Ingresá <i class="far fa-user-circle"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>
     <!--contenedor del header divido en tres secciones-->
+    <nav class="sections d-flex justify-between">
+        <div class="d-flex nav-desktop f-grow4">
+            <a href="#">INDUMENTARIA</a>
+            <a href="#">ACCESORIOS</a>
+            <a href="#">CALZADO</a>
+            <a href="#">MARCAS</a>
+            <a href="#">KIDS</a>
+            <a href="#">SALE</a>
+        </div>
+        <div class="justify-end f-grow1">
+            <a href="#">MIS COMPRAS</a>
+            <a href="#">HISTORIAL</a>
+        </div>
+    </nav>
     </header>
+
+    
     <main class="">
         <div><p>Ruta/del/producto</p></div>
-        <section class="d-flex product-photo">
-            <div class="vuela d-flex f-column">
-                <img src="https://fakeimg.pl/70x70/">
-                <img src="https://fakeimg.pl/70x70/">
-                <img src="https://fakeimg.pl/70x70/">
+        <div class="d-flex f-wrap justify-between h-30 mb-1">
+            <div class="d-flex f-column">
+                <img src="https://fakeimg.pl/100x100/">
+                <img src="https://fakeimg.pl/100x100/">
+                <img src="https://fakeimg.pl/100x100/">
+            </div>
+            <div class="w-49">
+                <img class="photo" src="img/ropa1.jpg">
+                <div class="">
+                    <p><button type="submit">Decripcion del producto</button></p>
+                    <p><button type="submit">Medidas</button> </p>
+                </div>
+            </div>
+            <div class="w-49 ptb-10">
+                <div class=" d-flex f-wrap h-50 justify-between">
+                    <div class="w-49">
+                        <div class="">
+                            <p> Condicion: Excelente estado</p>
+                            <p> Nombre del producto: Sweater estampado floral gris </p>
+                            <p> Talle: M</p>
+                            <p> Precio: $2.550</p>
+                        </div>
+                        <div class="">
+                            <button type="submit">Comprar</button>
+                            <button type="submit">Agregar al carrito</button> 
+                        </div>
+                        <div class="justify-center">
+                            <p>Otros usuarios tambien vieron</p>
+                            <div class="">
+                                <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                                <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                                <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                                <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div>
-                <img class="remera" src="img/remera1.jpg" alt="">
-                <div class="description">
-                    <ul class="nav">
-                        <li><p>Descripcion del producto</p>
-                            <ul><li>Pone lo que pinteeeee</li></ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="medidas">
-                    <ul class="nav">
-                        <li><p>Medidas</p>
-                            <ul><li>Meedidas medida por el medidor</li></ul>
-                        </li>
-                    </ul>
+                <p style="text-align: center;">Tambien podria interesarte</p>
+                <div class="d-flex justify-center">
+                    <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                    <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                    <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
+                    <img style="width: 10%; display: block;" src="img/ropa2.jpg" alt="">
                 </div>
             </div>
-
-        </section>
     </main>
-    <footer class="footer d-flex justify-center">
-        <p>FOOTER</p>
+    <footer class="footer d-flex">
+        <div class="forma-pago d-flex f-column align-items">
+            <p>MEDIOS DE PAGO</p>
+            <img src="img/pagos.png" alt="pagos">
+        </div>
+        <div class="redes d-flex f-column">
+            <p>SEGUINOS!</p>
+            <div class="imagenes-redes d-flex justify-center align-items">
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+            <p>NUESTRO MAIL</p>
+            <a href="#"><img src="img/mail.png" alt="mail"></a>
+        </div>
     </footer>
+    <div class="copy">
+        <p>Proyecto Grupo 3 - 2020 ©</p>
+    </div>
 </body>
 </html>

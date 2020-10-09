@@ -8,23 +8,22 @@
 input:focus{outline: 0;}/*quita recuadro azul de los imputs*/
 a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
-.hola{background-color: red;}
-
 .d-flex{display: flex;}/*Flex box*/
 .justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
 .justify-center{justify-content: center;}/*para centrar los divs y demas*/
+.justify-end{justify-content: flex-end;}
+.justify-around{justify-content: space-around;}
 .align-items{align-items: center;}
+.order-aca{order: 2;}
 .f-grow1{flex-grow: 1;}
 .f-grow4{flex-grow: 4;}
 .f-wrap{flex-wrap: wrap;}
-.f-column{flex-direction: column;}
-
-
-
-.header-mobile{
-    background-color: white;
-    padding: 0 4%;
+.f-wrapno{flex-wrap: nowrap;
 }
+.f-column{flex-direction: column;}
+.f-row{flex-direction: row;}
+
+
 
 .header-a-caja{
     background-color: none;
@@ -34,11 +33,19 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 
 @media (max-width: 460px) {
+    /*VERSION MOBILE*/
     #header-mobile{
         display: initial;
+
     }
     #header-desktop{
         display: none;
+    }
+
+    .header-mobile{
+        background-color: white;
+        padding: 0 4%;
+        height: 50px;
     }
 
     /*BOTON HAMBURGUESA*/
@@ -47,7 +54,11 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         display: block;
         width: 45px;
         height: 45px;
-        font-size: 20px;
+        font-size: 30px;
+        background-color: white;
+        border: none;
+        margin: 0px;
+
     }
     button#menu:focus + nav#superior {
         /* Si es pulsado el boton, mostramos el nav.
@@ -115,8 +126,9 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     /*PANEL DE BUSQUEDA*/
     .search{
         padding: 3%;
+        padding-top: 10px;
         background-color: lightgray;
-        height: 40px;
+        height: 30px;
         align-items: center;
         box-sizing: content-box;
     }
@@ -154,10 +166,163 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         height: 50px;
     }
 
+/*-----------HASTA ES EL HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+
+
+    /*MENU DESTACADOS*/
+
+    #nav-destacados{
+        display: none;
+    }
+
+    button#menu-destacados:focus + nav#nav-destacados {
+        /* Si es pulsado el boton, mostramos el nav.
+        Esto lo puedo hacer porque adquiere el foco. */
+        display: block;
+        position: relative;
+    }
+
+    nav#nav-destacados ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    nav#nav-destacados ul {
+        flex-direction: column;
+        position: relative;
+    }
+    nav#nav-destacados ul a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+
+    nav#nav-destacados ul a:hover {
+        background: lightgray;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 80%;
+    
+    }
+
+    #destacados-desktop{
+        display: none;
+    }
+    .destacados{
+        padding-top: 20px;
+    }
+    .destacados p{
+        margin-left: 35%;
+
+    }
+
+    .destacados button{
+        width: 20px;
+        border: none;
+        background-color: white;
+
+    }
+
+    /*FIN MENU DESTACADOS*/
+
+    .products{
+        width: 100%;
+    }
+
+    .products .products-card{
+    width: 47%;
+    height: 260px;
+    margin: 2px;
+    background-color: lightgray;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px;
+    }
+
+    .products .products-card img{
+        width: 100%;
+        max-height: 200px;
+        height: 100%;
+        padding: 5px;
+
+    }
+
+    .products .products-card p{
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .products .products-card .precio{
+        font-weight: bolder;
+        margin-top: 2px;
+    }
+
+    .footer{
+        background-color:#272727;
+        color: #ddd;
+        margin-top: 5px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+
+    .footer .forma-pago{
+        margin-top: 15px;
+
+    }
+
+    .footer .forma-pago img{
+        width: 200px;
+        height: 150px;
+        margin-top: 5px;
+    }
+
+    .footer .redes{
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .footer .redes img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .imagenes-redes {
+        margin-top: 10px;
+    }
+
+    .copy{
+        font-size: 12px;
+        background-color: black;
+        text-align: left;
+        height: 20px;
+        color: #ddd;
+
+    }
+
+
+
 }
+
+
+
 
 @media (min-width: 460px){
     /*ESTILOS PARA DESKTOP*/
+
+    button#menu {
+        /* Ocultamos el boton en escritorio */
+        display: none;
+    }
 
     #header-mobile{
         display: none;
@@ -165,47 +330,51 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     #header-desktop{
         display: initial;
         width: 80%;
+        margin-bottom: 0;
     }
     header{
         background-color: white;
         padding: 0 4% 0 4%;
 
     }/*color de fondo y tamanio, se quita cuando este el header completo */
-
+    .contenedor-header{
+        height: 50px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
     .search{
-        padding: 3%;
         background-color:white;
-        height: 40px;
+        height: 30px;
         align-items: center;
+        margin-left: 100px;
         box-sizing: content-box;
+        border: 1px solid lightgray;
+        border-radius: 1px;
     }
     
     .search input{
         color: #222;
-        font-size: 1em;
-        padding: 0 30px 0 10px;
-        border-radius: 3px;
+        font-size: 15px;
+        padding: 0 00px 0 15px;
+        border: none;
         width: 100%;
         height: 30px;
-        vertical-align: middle;
     }
     
     .search .icon-search{
-        position: absolute;
+        position: relative;
         color: grey;
         font-size: 20px;
         background-color: white;
         border: none;
         height: 30px;
-        padding-right: 15px;
-    }
-    .logo{
+        padding-right: 5px;
 
     }
 
     .logo img{
-        width: 60%;
-        margin-left: 45%;
+        width: 30%;
+        margin-left: 28%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -214,6 +383,14 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         background-color: none;
         justify-content: flex-end;
         padding-right: 30px;
+    }
+
+    .links-login a{
+        margin-left: 20px;
+    }
+
+    .links-login a:nth-child(3){
+        margin-right: 40px;
     }
 
     /*barra hombres mujeres color y centrado */
@@ -228,7 +405,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         text-align: center;
         color: black;
         background-color: white;
-        width: 120px;
+        width: 100px;
         position: relative;
         height: 100%;
         display: inline-block;
@@ -241,7 +418,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
             text-align: center;
             color: white;
             background-color: none;
-            width: 120px;
+            width: 100px;
             position: relative;
             height: 100%;
             display: inline-block;
@@ -256,53 +433,28 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         color: black;
     }
 
-    .slider img{
-        width: 100%;
-        height: 500px;
-    
+    .sections{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0px;
     }
 
-    button#menu {
-	/* Ocultamos el boton en escritorio */
-    display: none;
+    .sections a{
+        margin-left: 50px;
+    }
 
-}
+    .sections a:nth-child(1){
+        margin-left: 90px;
+    }
 
+/*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
 
 /* Main */
-.product-photo{padding: 3%;}
-.remera{width: 40%;}
-
-
-/* Inicio desplegable */
-ul, ol{list-style: none;}
-
-.nav li{
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
+.photo{
+    padding-left: 0%;
 }
 
-.nav > li{
-    float: left;
-}
 
-.nav li:hover{
-    background-color: #434343;
-}
-
-.nav li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.nav li:hover>ul{
-    display: block;
-}
-/* Fin desplegable */
 
 @media(max-width:360px){
     .vuela{
@@ -314,13 +466,53 @@ ul, ol{list-style: none;}
     }
 }
 
-/* Footer*/
+
+/* Footer */
 .footer{
-    background-color: lightgray;
-    height: 100px;
+    background-color:#272727;
+    color: #ddd;
+    margin-top: 5px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    vertical-align: middle;
+
 }
-.footer p{
-    font-size: 32px;
+
+
+.footer .forma-pago{
+    margin-top: 15px;
+
+}
+
+.footer .forma-pago img{
+    width: 200px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.footer .redes{
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+.footer .redes img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer .imagenes-redes {
+    margin-top: 10px;
+}
+
+.copy{
+    font-size: 12px;
+    background-color: black;
+    text-align: left;
+    height: 20px;
+    color: #ddd;
+
 }
 
 
