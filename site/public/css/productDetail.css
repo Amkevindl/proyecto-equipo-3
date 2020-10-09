@@ -454,6 +454,17 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     padding-left: 0%;
 }
 
+.boton {
+    padding: 4px 4px;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color:orange;
+    font-size: 1em;
+    text-align: center  ;
+    
+}
+.boton:hover{background-color: #FFCC80;}
 
 
 @media(max-width:360px){
