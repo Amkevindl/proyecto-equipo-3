@@ -18,7 +18,8 @@
         </div>
     </div>
 
-    <!--Header-->
+    <!--HEADER MOBILE-->
+
     <header id="header-mobile" class="d-flex f-column">
         <div class="header-mobile d-flex justify-between align-items">
             <button id="menu"><i class="fas fa-bars"></i></button>
@@ -53,62 +54,100 @@
         </div>
     
     </header>
+
+    <!--HEADER DESKTOP-->
+
     <header id="header-desktop">
-    <div class="d-flex align-items justify-between">        
+    <div class="contenedor-header d-flex align-items">        
         <!--cuadro de busqueda-->
-        <div class="search">
-            <form class="icon-search" id="form-busqueda" action="">
+        <div class="search f-grow1">
+            <form class="d-flex icon-search" id="form-busqueda" action="">
                 <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
         <!--cuadro de busqueda-->
 
-        <div class="logo">
+        <div class="logo f-grow1">
             <img src="img/logo.PNG" alt="Logo pilcha">
         </div>
 
-        <div class="d-flex header-a-caja">
-            <a href="">Log in <i class="far fa-user-circle"></i></a>
-            <a href="">Sign in <i class="far fa-user-circle"></i></a>
-            <a href="">Favoritos <i class="fas fa-heart"></i></a>
-            <a href="">Carrito <i class="fas fa-shopping-cart"></i></a>
+        <div class="links-login d-flex header-a-caja f-grow1">
+            <!--<a href="">Log in <i class="far fa-user-circle"></i></a>-->
+            <a href="">Ingresá <i class="far fa-user-circle"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>
     <!--contenedor del header divido en tres secciones-->
+    <nav class="sections d-flex justify-between">
+        <div class="d-flex nav-desktop f-grow4">
+            <a href="#">INDUMENTARIA</a>
+            <a href="#">ACCESORIOS</a>
+            <a href="#">CALZADO</a>
+            <a href="#">MARCAS</a>
+            <a href="#">KIDS</a>
+            <a href="#">SALE</a>
+        </div>
+        <div class="justify-end f-grow1">
+            <a href="#">MIS COMPRAS</a>
+            <a href="#">HISTORIAL</a>
+        </div>
+    </nav>
     </header>
 
-    <main class="main-body bckg-red">
+    <main class="main-body">
+        <!-- cuadro de detalle del producto-->
         <div class="d-flex f-wrap justify-between h-30 mb-1">
-            <div class="bckg-blue w-49 photo">
+            <div class="bckg-blue w-39 photo">
                 <img src="img/slider1.jpg">
             </div>
-            <div class="bckg-green w-49 ptb-10">
-                <div class="descrsup d-flex f-wrap h-50 justify-between bckg-blue">
-                    <div class="descrsupleft w-49">
-                        <p> Nombre </p>
-                        <p> Marca </p>
-                        <p> Talle </p>
+            <div class="w-60 ptb-10">
+                <div class="descrsup d-flex f-wrap h-60 justify-between">
+                    <div class="descrsupleft w-70 d-flex f-column justify-between">
+                        <p> Sweater estampado floral gris </p>
+                        <p> Rapsodia </p>
+                        <p> Talle: M </p>
                     </div>
-                    <div class="descrsupright w-49 align-center">
-                        <p class="txt-agn">  -1+ </p>
+                    <div class="descrsupright w-29 align-center">
+                        <p class="txt-agn txt-bold"> -1+ </p>
                     </div>
                 </div>
-                <div class="descrinf d-flex f-wrap h-50 justify-between">
-                    <div class="descrinfleft">
-                        <p> Precio </p>
+                <div class="descrinf d-flex f-wrap h-40 justify-between">
+                    <div class="descrinfleft w-49 align-center">
+                        <p> $2.550 </p>
                     </div>
-                    <div class="descrinfright">
-                        <button type="submit"> Eliminar producto</button>
-                        <button type="submit"> Guardar para después</button> 
+                    <div class="descrinfright w-49 d-flex f-column justify-around">
+                        <p><button type="submit" class="eliminar-guardar"> Eliminar producto</button></p>
+                        <p><button type="submit" class="eliminar-guardar"> Guardar para después</button></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="h-15 bckg-blue mb-1">
-        <!-- te gustaria agregar algo mas, flex-->
+        <!-- cuadro de tembien podria interesarte-->
+        <div class="h-20 mb-1 bckg-gray">
+            <p class="txt-bold"> También podría interesarte</p>
+            <div class="d-flex f-wrap justify-around align-items">
+                <div class="photo-sug">
+                    <img src="img/ropa1.jpg" alt="foto1">
+                </div>
+                <div class="photo-sug">
+                    <img src="img/ropa1.jpg" alt="foto1">
+                </div>
+                <div class="photo-sug">
+                    <img src="img/ropa1.jpg" alt="foto1">
+                </div>
+            </div>
         </div>
-        <div class="h-18 mb-1">
-        <!--resumen de la compra-->
+        <!-- cuadro resumen de compra-->
+        <div class="h-22 ptb-5 d-flex f-wrap justify-between linea-gris">
+            <p class="txt-bold w-100"> Resumen de la compra</p>
+            <p class="checkout"> Subtotal</p>
+            <p class="checkout precioscheckout" > $2.550 </p>
+            <p class="checkout"> Descuento:</p>
+            <p class="checkout precioscheckout"> -$450 </p>
+            <p class="checkout txt-bold"> Total:</p>
+            <p class="checkout precioscheckout txt-bold"> $2.100 </p>
+            <button type="submit" class="continuarcompra align-center"> Continuar con la compra </button>
         </div>
     </main> 
     
