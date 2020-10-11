@@ -16,12 +16,18 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .align-items{align-items: center;}
 .order-aca{order: 2;}
 .f-grow1{flex-grow: 1;}
+.f-growp{
+    flex-grow: 1;
+    padding: 0%;
+}
 .f-grow4{flex-grow: 4;}
 .f-wrap{flex-wrap: wrap;}
-.f-wrapno{flex-wrap: nowrap;
-}
+.f-wrapno{flex-wrap: nowrap;}
 .f-column{flex-direction: column;}
 .f-row{flex-direction: row;}
+.f-start{align-content: flex-start;}
+.f-direction{flex-direction: row;}
+.a-content{align-content: flex-end;}
 
 
 
@@ -232,38 +238,6 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
     /*FIN MENU DESTACADOS*/
 
-    .products{
-        width: 100%;
-    }
-
-    .products .products-card{
-    width: 47%;
-    height: 260px;
-    margin: 2px;
-    background-color: lightgray;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px;
-    }
-
-    .products .products-card img{
-        width: 100%;
-        max-height: 200px;
-        height: 100%;
-        padding: 5px;
-
-    }
-
-    .products .products-card p{
-        text-align: center;
-        margin-top: 4px;
-    }
-
-    .products .products-card .precio{
-        font-weight: bolder;
-        margin-top: 2px;
-    }
-
     .footer{
         background-color:#272727;
         color: #ddd;
@@ -450,11 +424,51 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 /*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
 
 /* Main */
-.photo{
-    padding-left: 0%;
+.photo{padding-left: 0%;}
+.ruta{margin-left: 3%;}
+.mini{margin-left: 4%;}
+.mini .mini-ropa{width: 75%;}
+.p-right{padding-right: 130px;}
+
+
+
+.products-card .image-interest{width: 70%;}
+
+.products-card{
+    width: 20%;
+    height: 30%;
+    background-color: lightgray;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
 }
 
-.boton {
+.img-vieron{
+    width: 27%;
+    display: block;
+}
+
+.boton-desc{
+    padding: 4px 0px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color:orange;
+    font-size: 1em;
+    margin: auto;
+    margin-bottom: 1px;
+}
+.boton-desc:hover{background-color: #FFCC80;}
+.derecha-desc{margin-left: 28%;}
+.derecha-med{margin-left: 61%;}
+hr{margin-top: 10px; color: black;}
+.cont{width: 70%;}
+.referencias p{margin-bottom: 10px;}
+.referencias .m-top{margin-top: 50px;}
+.botones p{margin-bottom: 0%;}
+.m-top{margin-top: 30%;}
+.botoncompra {
     padding: 4px 4px;
     width: auto;
     border-radius: 5px;
@@ -464,8 +478,9 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     text-align: center  ;
     
 }
-.boton:hover{background-color: #FFCC80;}
+.botoncompra:hover{background-color: #FFCC80;}
 
+/* Aca termina el main de */
 
 @media(max-width:360px){
     .vuela{
