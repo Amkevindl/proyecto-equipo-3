@@ -3,55 +3,23 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.d-flex {
-    display:flex;
-}
+.d-flex {display:flex;}
+.f-wrap {flex-wrap: wrap;}
+.justify-between {justify-content: space-between;}
 
-.f-wrap {
-    flex-wrap: wrap;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.pb-30 {
-    padding-bottom: 30px;
-}
-
-.pb-20 {
-    padding-bottom: 20px;
-}
+.pb-30 {padding-bottom: 30px;}
+.pb-20 {padding-bottom: 20px;}
+.p-35 {padding:35px;}
+.pt-35 {padding-top:35px;}
+.w-45 { width:45%;}
+.w-100 {width:100%;}
+.h-60 {height: 60vh;}
 
 .img-container {
     height: 40vh;
-}
-
-.logo-size {
-    height: 8vh;
-    width: auto;
-}
-
-.p-35 {
-    padding:35px;
-}
-
-.pt-35 {
-    padding-top:35px;
-}
-
-.position-square {
-    position:relative;
-    top:-90px;
-}
-
-.position-img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
 }
 
 .randomimg {
@@ -60,8 +28,29 @@
     background-position: center;
 }
 
-.h-60 {
-    height: 60vh;
+.position-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.logo-size {
+    height: 8vh;
+    width: auto;
+}
+
+.square {
+    background-color: rgba(247,243,243,0.8);
+    border: 1px solid none;
+    border-radius: 5px; 
+    padding: 35px 20px; 
+    width: 40%; 
+    margin:auto;
+}
+
+.position-square {
+    position:relative;
+    top:-90px;
 }
 
 .txt-agn {
@@ -73,51 +62,44 @@
     font-size: 1.3em;
 }
 
-.txt-tyc {
-    font-size: 0.8em;
-}
-
-.square {
-    background-color: #ebebeb;
-    border: 1px solid none;
-    border-radius: 5px; 
-    padding: 35px 20px; 
-    width: 40%; 
-    margin:auto;
-
+input:focus {
+    outline:0;
 }
 
 .square .dataentry {
     width:45%;
-    background-color: #ebebeb;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid gray; 
     margin: 20px 0px;
-    font-size: 0.95em;
+    font-size: 0.90em;
+    font-family: 'roboto', sans-serif;
 }
 
-.square .dataentry:nth-child(4) {
-    width: 90%;
+.txt-tyc {
+    font-size: 0.8em;
 }
 
 .square button {
     width: 80%;
     padding: 8px;
     margin: 35px auto 0px auto;
-    background-color: orange;
+    background-color: #8C4242;
     border-radius: 5px;
     border: none;
-}
-
-input:focus {
-    outline:0;
+    font-weight: bold;
 }
 
 button:focus {
     outline:0;
 }
 
+button:hover {
+    background-color:orangered;
+}
+
 @media (max-width:460px) {
+
     .square {
         width: 100%;
         background-color: white;
@@ -126,5 +108,13 @@ button:focus {
 
     .square .dataentry {
         background-color: white;
+    }
+
+    .square button {
+        padding: 10px;
+    }
+
+    .txt-tyc {
+        padding-bottom: 15px;
     }
 }
