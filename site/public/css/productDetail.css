@@ -40,6 +40,9 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 @media (max-width: 460px) {
     /*VERSION MOBILE*/
+    #main-desktop{
+        display: none;
+    }
     #header-mobile{
         display: initial;
 
@@ -172,76 +175,74 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         height: 50px;
     }
 
-/*-----------HASTA ES EL HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+ /*-----------HASTA ES EL HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+ /*----Inicio main Mobile----*/
+ .detail{
+     width: 100%;
+    flex-wrap: wrap;
+ }
+ .detail .container{
+    width: 100%;
+    margin: 2px;
+    background-color: lightgray;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px;
+ }
+ .detail .container .mini-ropa{display: none;}
+ .detail .container .mob-none{display: none;}
 
-
-    /*MENU DESTACADOS*/
-
-    #nav-destacados{
-        display: none;
-    }
-
-    button#menu-destacados:focus + nav#nav-destacados {
-        /* Si es pulsado el boton, mostramos el nav.
-        Esto lo puedo hacer porque adquiere el foco. */
-        display: block;
-        position: relative;
-    }
-
-    nav#nav-destacados ul {
-        list-style: none;
-        text-align: center;
-    }
-
-    nav#nav-destacados ul {
-        flex-direction: column;
-        position: relative;
-    }
-    nav#nav-destacados ul a {
-        display: block;
-        width: 100%;
-        text-decoration: none;
-        padding: .3em 0;
-        text-align: center;
-        color: black;
-        background: white;
-        transition: 1s all;
-    }
-
-    nav#nav-destacados ul a:hover {
-        background: lightgray;
-    }
-
-    .slider img{
-        width: 100%;
-        height: 80%;
+ .ruta{font-size: 12px;}
+ .titulo{font-size: 16px;}
+ .precio{font-size: 14px;}
+ 
+.ropa1{
     
-    }
+}
 
-    #destacados-desktop{
-        display: none;
-    }
-    .destacados{
-        padding-top: 20px;
-    }
-    .destacados p{
-        margin-left: 35%;
+ .detail .container img{
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    padding: 5px;
+ }
+ .detail .container p{
+    text-align: center;
+    margin-top: 4px;
+ }
+ .detail .container .m-top .img-vieron{
+     width: 25%;
+ }
+ .boton-desc{
+    padding: 4px 0px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    margin: auto;
+    margin-bottom: 1px;
+    color: white;
+ }
 
-    }
-
-    .destacados button{
-        width: 20px;
-        border: none;
-        background-color: white;
-
-    }
-
-    /*FIN MENU DESTACADOS*/
+ .botoncompra {
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+ }
+ .tb-inter{text-align: center;}
+ /*----Fin del main mobile---- */
 
     .footer{
         background-color:#272727;
         color: #ddd;
-        margin-top: 5px;
+        margin-top:20%;
         text-align: center;
         flex-direction: column;
 
@@ -292,7 +293,9 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 @media (min-width: 460px){
     /*ESTILOS PARA DESKTOP*/
-
+    #main-mobile{
+        display: none;
+    }
     button#menu {
         /* Ocultamos el boton en escritorio */
         display: none;
@@ -421,20 +424,28 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         margin-left: 90px;
     }
 
-/*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+ /*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
 
-/* Main */
-.photo{padding-left: 0%;}
-.ruta{margin-left: 3%;}
-.mini{margin-left: 4%;}
-.mini .mini-ropa{width: 75%;}
-.p-right{padding-right: 130px;}
+ /* Main desktop*/
+ main{
+    width: 90%;
+    margin: 10px auto;
+ }
+ .photo{padding-left: 0%;}
+ .ruta{
+    margin-left: 3%;
+    margin-bottom: 20px; 
+    margin-left: 8%;
+ }
+ .mini{margin-left: 4%;}
+ .mini .mini-ropa{width: 75%;}
+ .p-right{padding-right: 130px;}
 
 
 
-.products-card .image-interest{width: 70%;}
+ .products-card .image-interest{width: 70%;}
 
-.products-card{
+ .products-card{
     width: 20%;
     height: 30%;
     background-color: lightgray;
@@ -442,59 +453,52 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     text-align: center;
     padding: 10px;
     margin-left: 10px;
-}
+ }
 
-.img-vieron{
+ .img-vieron{
     width: 27%;
     display: block;
-}
-
-.boton-desc{
+ }
+ /*Boton descripcion y medidas*/
+ .boton-desc{
     padding: 4px 0px;
     width: 90%;
     border-radius: 5px;
-    border: 1px solid orange;
-    background-color:orange;
+    border: 1px solid black;
+    background-color:#212121;
     font-size: 1em;
     margin: auto;
     margin-bottom: 1px;
-}
-.boton-desc:hover{background-color: #FFCC80;}
-.derecha-desc{margin-left: 28%;}
-.derecha-med{margin-left: 61%;}
-hr{margin-top: 10px; color: black;}
-.cont{width: 70%;}
-.referencias p{margin-bottom: 10px;}
-.referencias .m-top{margin-top: 50px;}
-.botones p{margin-bottom: 0%;}
-.m-top{margin-top: 30%;}
-.botoncompra {
+    color: white;
+ }
+
+ .derecha-desc{margin-left: 28%;}
+ .derecha-med{margin-left: 61%;}
+ hr{margin-top: 10px; color: black;}
+ .cont{width: 70%;}
+ .referencias p{margin-bottom: 10px;}
+ .referencias .m-top{margin-top: 50px;}
+ .botones p{margin-bottom: 0%;}
+ .m-top{margin-top: 30%;}
+ .botoncompra {
     padding: 4px 4px;
     width: auto;
     border-radius: 5px;
-    border: 1px solid orange;
-    background-color:orange;
+    border: 1px solid black;
+    background-color:#212121;
     font-size: 1em;
-    text-align: center  ;
+    text-align: center;
+    color: white;
     
-}
-.botoncompra:hover{background-color: #FFCC80;}
-
-/* Aca termina el main de */
-
-@media(max-width:360px){
-    .vuela{
-        display: none;
-    }
-    .remera{
-        width: 50%;
-        display: none;
-    }
-}
+ }
+ .tb-inter{text-align: center;}
 
 
-/* Footer */
-.footer{
+ /* Aca termina el main desktop*/
+
+
+ /* Footer */
+ .footer{
     background-color:#272727;
     color: #ddd;
     margin-top: 5px;
@@ -503,45 +507,45 @@ hr{margin-top: 10px; color: black;}
     justify-content: space-evenly;
     vertical-align: middle;
 
-}
+ } 
 
 
-.footer .forma-pago{
+ .footer .forma-pago{
     margin-top: 15px;
 
-}
+ }
 
-.footer .forma-pago img{
+ .footer .forma-pago img{
     width: 200px;
     height: 150px;
     margin-top: 5px;
-}
+ }
 
-.footer .redes{
+ .footer .redes{
     margin-top: 15px;
     margin-bottom: 5px;
 
-}
+ }
 
-.footer .redes img{
+ .footer .redes img{
     width: 50px;
     height: 50px;
-}
+ }
 
-.footer .imagenes-redes {
+ .footer .imagenes-redes {
     margin-top: 10px;
-}
+ }
 
-.copy{
+ .copy{
     font-size: 12px;
     background-color: black;
     text-align: left;
     height: 20px;
     color: #ddd;
 
-}
+ }
 
 
-}
+ }
 
 
