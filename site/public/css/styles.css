@@ -20,8 +20,6 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 .f-column{flex-direction: column;}
 .f-row{flex-direction: row;}
 
-
-
 .header-a-caja{
     background-color: none;
 
@@ -30,7 +28,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 
 @media (max-width: 460px) {
-    /*VERSION MOBILE*/
+/*VERSION MOBILE*/
     #header-mobile{
         display: initial;
 
@@ -45,8 +43,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         height: 50px;
     }
 
-    /*BOTON HAMBURGUESA*/
-    /* En smartphone mostramos el botón */
+/*BOTON HAMBURGUESA*/
+/* En smartphone mostramos el botón */
     button#menu {
         display: block;
         width: 45px;
@@ -58,8 +56,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
     }
     button#menu:focus + nav#superior {
-        /* Si es pulsado el boton, mostramos el nav.
-        Esto lo puedo hacer porque adquiere el foco. */
+/* Si es pulsado el boton, mostramos el nav.
+Esto lo puedo hacer porque adquiere el foco. */
         display: block;
         position: fixed;
         z-index: 5;
@@ -234,13 +232,13 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     }
 
     .products .products-card{
-    width: 47%;
-    height: 260px;
-    margin: 2px;
-    background-color: lightgray;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px;
+        width: 47%;
+        height: 260px;
+        margin: 2px;
+        background-color: lightgray;
+        align-items: center;
+        font-size: 12px;
+        padding: 3px;
     }
 
     .products .products-card img{
@@ -411,17 +409,17 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         padding-top: 6px;
     }
     .div-hm .div-hm-m a{
-            margin-left: 4px;
-            text-align: center;
-            color: white;
-            background-color: none;
-            width: 100px;
-            position: relative;
-            height: 100%;
-            display: inline-block;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 6px;
+        margin-left: 4px;
+        text-align: center;
+        color: white;
+        background-color: none;
+        width: 100px;
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 6px;
     
     }/*barra hombres y mujeres color links */
     
@@ -495,13 +493,13 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     }
 
     .products .products-card{
-    width: 20%;
-    height: 400px;
-    margin: 2px;
-    background-color: lightgray;
-    align-items: center;
-    font-size: 16px;
-    padding: 3px;
+        width: 20%;
+        height: 400px;
+        margin: 2px;
+        background-color: lightgray;
+        align-items: center;
+        font-size: 16px;
+        padding: 3px;
     }
 
     .products .products-card img{
