@@ -6,6 +6,7 @@
     <title>Carrito de compras</title>
     <link rel="stylesheet" href="/css/productCart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
             <p><i class="fas fa-user"></i></p>
 
 
-            <img class="logo" src="img/logo.PNG" alt="logo">
+            <img class="logo-mobile" src="img/logo.PNG" alt="logo">
 
 
             <p><i class="fas fa-heart"></i></p>
@@ -46,7 +47,7 @@
             <p><i class="fas fa-shopping-cart"></i></p>
         </div>
         <div>
-            <div class="search">
+            <div class="search-mobile">
                 <form class="d-flex icon-search" id="form-busqueda" action="">
                     <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
                 </form>
@@ -95,15 +96,39 @@
     </nav>
     </header>
 
-    <main class="main-body">
+    <main class="main-body f-column">
+        <p class="titulo">Carrito de compras</p>
+        <!--BARA DE ESTADO DE COMPRA-->
+        <div class="barra-progreso">
+            <ol class="progress" data-steps="4">
+                <li class="done">
+                <span class="name">Agregado al carrito</span>
+                <span class="step"><span>1</span></span>
+                </li>
+                <li class="active">
+                <span class="name">Checkout carrito</span>
+                <span class="step"><span>2</span></span>
+                </li>
+                <li>
+                <span class="name">Pago</span>
+                <span class="step"><span>3</span></span>
+                </li>
+                <li>
+                <span class="name">Entregado</span>
+                <span class="step"><span>4</span></span>
+                </li>
+            </ol>
+        </div>
+
+
         <!-- cuadro de detalle del producto-->
-        <div class="d-flex f-wrap justify-between h-30 mb-1">
-            <div class="d-flex bckg-blue w-39 photo">
+        <div class="producto d-flex f-wrap justify-between h-30 mb-1 linea-gris">
+            <div class="d-flex bckg-blue photo">
                 <img src="img/ropa1.jpg">
             </div>
-            <div class="w-60 ptb-10">
+            <div class="contenedor-producto justify-center ptb-10">
                 <div class="descrsup d-flex f-wrap ">
-                    <div class="descrsupleft w-100 d-flex f-column justify-between">
+                    <div class="descrsupleft w-70 d-flex f-column justify-between">
                         <p class="txt-bold"> Sweater estampado floral gris </p>
                         <p> Rapsodia </p>
                         <p> Talle: M </p>
@@ -113,9 +138,9 @@
                     <p>Cantidad:</p>
                     <select name="cantidad" id="">
                         <option value="1">1</option>
-                        <option value="1">2</option>
-                        <option value="1">3</option>
-                        <option value="1">4</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                     </select>
                 </div>
                 
@@ -125,30 +150,76 @@
                     </div>
                 </div>
 
-                <div class="descrinfright d-flex f-column justify-center">
+                <div class="botones-mobile d-flex f-wrap justify-center">
                     <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
                     <button type="submit" class="eliminar-guardar"> Guardar para después</button>
                 </div>
                 
             </div>
+            <div class="botones-desktop d-flex f-column">
+                <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+            </div>
+
+        </div>
+
+        <div class="producto d-flex f-wrap justify-between mb-1 linea-gris">
+            <div class="d-flex bckg-blue photo">
+                <img src="img/ropa3.jpg">
+            </div>
+            <div class="contenedor-producto justify-center ptb-10">
+                <div class="descrsup d-flex f-wrap ">
+                    <div class="descrsupleft w-70 d-flex f-column justify-between">
+                        <p class="txt-bold"> Adidas Buzo Logo hdy </p>
+                        <p> Adidas </p>
+                        <p> Talle: M </p>
+                    </div>
+                </div>
+                <div class="descrsupright w-29 d-flex">
+                    <p>Cantidad:</p>
+                    <select name="cantidad" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+                <div class="descrinf d-flex f-wrap justify-between">
+                    <div class="descrinfleft w-100">
+                        <p> $2.126 </p>
+                    </div>
+                </div>
+
+                <div class="botones-mobile d-flex f-wrap justify-center">
+                    <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                    <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+                </div>
+                
+            </div>
+            <div class="botones-desktop d-flex f-column ">
+                <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+            </div>
+
         </div>
         <!-- cuadro de tembien podria interesarte-->
-        <div class="h-24 mb-1 bckg-gray">
-            <p class="txt-bold"> También podría interesarte</p>
-            <div class="d-flex f-wrap justify-around align-items">
-                <div class="photo-sug">
+        <div class="podria h-21 mb-1 ">
+            <p class="txt-interesarte"> También podría interesarte</p>
+            <div class="contenedor-intere d-flex f-wrap justify-around align-items bckg-white">
+                <div class="photo-sug bckg-gray">
                     <img src="img/ropa2.jpg" alt="foto1">
                 </div>
-                <div class="photo-sug">
-                    <img src="img/ropa3.jpg" alt="foto1">
+                <div class="photo-sug bckg-gray">
+                    <img src="img/ropa7.jpg" alt="foto1">
                 </div>
-                <div class="photo-sug">
+                <div class="photo-sug bckg-gray">
                     <img src="img/ropa5.jpg" alt="foto1">
-                </div>
-            </div>
+                </div>   
+            </div>             
         </div>
         <!-- cuadro resumen de compra-->
-        <div class="h-22 ptb-5 d-flex f-wrap justify-between linea-gris">
+        <div class="resumen w-70 h-22 ptb-5 d-flex f-wrap justify-between">
             <p class="txt-bold w-100"> Resumen de la compra</p>
             <p class="checkout"> Subtotal</p>
             <p class="checkout precioscheckout" > $2.550 </p>
