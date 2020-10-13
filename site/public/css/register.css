@@ -25,7 +25,7 @@
 .randomimg {
     background-size: cover;
     background-image: url("../img/Fondo1.PNG");
-    background-position: center;
+    background-position: auto;
 }
 
 .position-img {
@@ -84,10 +84,10 @@ input:focus {
     width: 80%;
     padding: 8px;
     margin: 35px auto 0px auto;
-    background-color: #8C4242;
+    background-color: rgb(112, 107, 107);
     border-radius: 5px;
     border: none;
-    font-weight: bold;
+    color: white;
 }
 
 button:focus {
@@ -95,7 +95,8 @@ button:focus {
 }
 
 button:hover {
-    background-color:orangered;
+    background-color: rgb(21,21,21);
+    cursor: pointer;
 }
 
 @media (max-width:460px) {
