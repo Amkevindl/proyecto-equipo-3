@@ -10,7 +10,7 @@ Basarnos un poco más en el Trello.
 Para los próximos sprints más demandantes, tomar como variable importante a considerar la disponibilidad de cada uno. 
 
 ## Less of:
-Hacer las cosas bien detalladamente desde el principio, no dejando detalles para hacer al final.
+Dejar detalles para hacer al final en vez de hacer todo con profundidad desde el principio.
 No arrancar el sprint al momento en que nos llega la consigna. 
 
 ## Stop doing:
