@@ -1041,8 +1041,14 @@ ol.progress[data-steps="2"] li {
 
 }
 
+.podria p{
+    font-size: 16px;
+}
 
-
+.podria .precio{
+    margin-top: 15px;
+    font-weight: bold;
+}
 
 
 
