@@ -71,10 +71,15 @@ input:focus {
 .square button {
     width: 80%;
     padding: 7px;
-    background-color:#8C4242;
+    background-color: rgb(112,107,107);
     border-radius: 5px;
     border: none;
-    font-weight: bold;
+    color: white;
+}
+
+.c-white {
+    color:white;
+    text-decoration: none;
 }
 
 button:focus {
@@ -82,7 +87,8 @@ button:focus {
 }
 
 button:hover {
-    background-color: orangered;
+    background-color: rgb(21,21,21);
+    cursor: pointer;
 }
 
 .position-img {
