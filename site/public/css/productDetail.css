@@ -163,7 +163,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         padding-right: 15px;
     }
     
-    header p{
+    header a{
         font-size: 20px;
         margin: 10px;
     }
@@ -192,24 +192,36 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
  .detail .container .mini-ropa{display: none;}
  .detail .container .mob-none{display: none;}
 
- .ruta{font-size: 12px;}
- .titulo{font-size: 16px;}
- .precio{font-size: 14px;}
- 
+ .ruta{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+ .titulo{font-size: 20px; font-weight: bold;}
+ .precio{font-size: 18px; margin-top: 5px;}
+ .ropa1{
+     width: 80%;
+     background-color: white;
+    margin-bottom: 10px;
+    margin-left: 10%;    
+}
 
 
  .detail .container img{
     width: 100%;
     max-height: 200px;
-    height: 100%;
+    height: 50%;
     padding: 5px;
  }
  .detail .container p{
     text-align: center;
-    margin-top: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
  }
  .detail .container .m-top .img-vieron{
-     width: 25%;
+     width: 30%;
  }
  .boton-desc{
     padding-top: 4px;
@@ -221,6 +233,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     margin-bottom: 1px;
     color: white;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
  }
  .boton-med{
     padding-top: 4px;
@@ -232,6 +246,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     margin-bottom: 1px;
     color: white;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
  }
 
  .botoncompra {
@@ -246,12 +262,30 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     color: white;
  }
  .tb-inter{text-align: center;}
+
+.m-top{
+    height: 70%;
+    margin-bottom: -4px;
+}
+
+.m-top .conteiner-vieron img{
+    width: 30%;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.interest{
+    height: 100%;
+}
+
+
+
  /*----Fin del main mobile---- */
 
     .footer{
         background-color:#272727;
         color: #ddd;
-        margin-top:20%;
+        margin-top:2%;
         text-align: center;
         flex-direction: column;
 
@@ -473,7 +507,10 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
      margin-left: 4%;
      height: 350px;
 }
- .mini .mini-ropa{width: 53%;}
+ .mini .mini-ropa{width: 53%;
+    height: 110px;
+    margin-bottom: 7px;
+}
  .p-right{padding-right: 130px;}
 
 .alt-alt{
@@ -531,7 +568,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
  .m-tope{
      margin-top: 8px;
  }
- .tb-inter{text-align: center;}
+ .tb-inter{text-align: center; margin-top: 20px; margin-bottom: 20px;font-size: 18px;}
 
 
  /* Aca termina el main desktop*/

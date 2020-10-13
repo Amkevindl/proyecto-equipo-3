@@ -150,7 +150,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     }
 
     /*PANEL DE BUSQUEDA*/
-    .search-mobile{
+    #header-mobile .search{
         padding: 3%;
         padding-top: 10px;
         background-color: lightgray;
@@ -159,7 +159,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         box-sizing: content-box;
     }
     
-    .search-mobile input{
+    #header-mobile .search input{
         color: #222;
         font-size: 1em;
         padding: 0 30px 0 10px;
@@ -170,7 +170,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         vertical-align: middle;
     }
     
-    .search-mobile .icon-search{
+    #header-mobile .search .icon-search{
         position: relative;
         color: grey;
         font-size: 20px;
@@ -180,12 +180,12 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         padding-right: 15px;
     }
     
-    header p{
+    #header-mobile header a{
         font-size: 20px;
         margin: 10px;
     }
     
-    .logo-mobile{
+    #header-mobile .logo{
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -240,7 +240,8 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 
 .resumen{
-    margin-left: 17%;
+    margin-left: 5%;
+    margin-top: -55px;
 }
 
 .photo-sug img {
@@ -360,7 +361,6 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
     background-color:#212121;
     color: white;
     margin-bottom: 4px;
-    margin-left: 8px;
 }
 
 
@@ -416,16 +416,67 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 }
 
 .txt-interesarte{
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 3px;
     border-top: 1px grey solid;
-    padding-top: 3px;
+    padding-top: 15px;
+}
+
+.contenedor-interes{
+    height: 260px;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.podria{
+    height: 80%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.podria img{
+    height: 90px;
+}
+
+.podria .photo-sug{
+    width: 22%;
+}
+
+.podria article{
+    background-color: #ebebeb;
+    width: 40%;
+    margin: 5px;
+    align-items: center;
+    padding: 3px;
+}
+
+.podria article img{
+    width: 90%;
+    height: 100px;
+}
+
+.podria article p{
+    text-align: center;
+    margin-left: -6px;
+}
+
+.podria article:nth-child(3){
+    display: none;
+
+}
+
+.podria article:nth-child(4){
+    display: none;
+
 }
 
 
 @media (min-width: 460px){
     /*ESTILOS PARA DESKTOP*/
-
+    #main-mobile{
+        display: none;
+    }
     button#menu {
         /* Ocultamos el boton en escritorio */
         display: none;
@@ -433,14 +484,6 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
     #header-mobile{
         display: none;
-    }
-
-    .div-hm{
-        display: flex;
-    }
-
-    .barra-progreso{
-        display: flex;
     }
 
     #header-desktop{
@@ -511,6 +554,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
     /*barra hombres mujeres color y centrado */
     .div-hm{
+        display: flex;
         background-color: black;
         height: 30px;
         justify-content: center;
@@ -530,17 +574,17 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         padding-top: 6px;
     }
     .div-hm .div-hm-m a{
-        margin-left: 4px;
-        text-align: center;
-        color: white;
-        background-color: none;
-        width: 100px;
-        position: relative;
-        height: 100%;
-        display: inline-block;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-top: 6px;
+            margin-left: 4px;
+            text-align: center;
+            color: white;
+            background-color: none;
+            width: 100px;
+            position: relative;
+            height: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 6px;
     
     }/*barra hombres y mujeres color links */
     
@@ -563,10 +607,14 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
         margin-left: 90px;
     }
 
-/*------ HASTA ACA ES EL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+     /*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
 
 .titulo{
     border-bottom: 1px solid black;
+}
+
+.barra-progreso{
+    display: flex;
 }
 
 /*------------- BARRA DE PROGRESO---------- */
@@ -801,7 +849,7 @@ ol.progress[data-steps="2"] li {
     align-items: center;
 }
 .photo img{
-    width: 50%;
+    width: 40%;
     height: 80%;
     margin-left: 150px;
 
@@ -839,31 +887,20 @@ ol.progress[data-steps="2"] li {
 }
 
 .continuarcompra {
-    width:90%;
+    width: 60%;
     height: 30px;
     font-size: 0.9em;
     border-radius: 2px;
     border: none;
     background-color:#212121;
     color: white;
+    margin-top: 10px;
     margin-bottom: 4px;
     margin-left: 8px;
+    margin-left: 15%;
 }
 
-.podria{
-    height: 200px;
-    margin-top: 50px;
-}
 
-.podria img{
-    height: 140px;
-    width: 250px;
-    margin-left: 12%;
-}
-
-.podria .photo-sug{
-    width: 22%;
-}
 
 
 .footer{
@@ -914,8 +951,7 @@ ol.progress[data-steps="2"] li {
 }
 
 .resumen{
-    margin-left: 17%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .podria p{
@@ -927,17 +963,84 @@ ol.progress[data-steps="2"] li {
 }
 
 .producto{
-    height: 60%;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 .txt-interesarte{
     border-top: 0;
 }
 
-.contenedor-intere{
-    height: 160px;
-    background-color: #ebebeb;
+.contenedor-interes{
+    height: 260px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+
 }
+
+.podria article:nth-child(3){
+    display: initial;
+
+}
+
+.podria article:nth-child(4){
+    display: initial;
+
+}
+
+
+.podria{
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+
+.podria img{
+    height: 140px;
+    width: 90%;
+}
+
+.podria .photo-sug{
+    width: 22%;
+}
+
+.podria article{
+    background-color: #ebebeb;
+    width: 20%;
+    margin: 3px;
+    height: 300px;
+}
+
+.podria article img{
+    width: 90%;
+    height: 70%;
+    background-color: lightgray;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.podria article p{
+    text-align: center;
+    margin-left: -6px;
+    font-weight: normal;
+    margin-bottom: -20px;
+}
+
+.podria article:nth-child(3) img{
+    margin-left: 5%;
+
+}
+
+.podria article:nth-child(4) img{
+    margin-left: 5%;
+
+}
+
 
 
 
