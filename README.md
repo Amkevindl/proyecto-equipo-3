@@ -39,7 +39,7 @@ Ingresar a ```http://localhost/proyecto/index.html```
 
 #### Herramientas
 
-- [Trello para la gestion de las tareas](https://trello.com)
+- [Trello para la gestion de las tareas](https://trello.com/b/aW4kK7p1/proyecto-grupo-3)
 - [Figma para la creación de los wireframes](https://figma.com)
 
 
