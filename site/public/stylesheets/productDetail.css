@@ -1,0 +1,628 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}/*bordes y demas*/
+
+input:focus{outline: 0;}/*quita recuadro azul de los imputs*/
+a{text-decoration: none; color: black;}/*sin subrayado en links*/
+
+.d-flex{display: flex;}/*Flex box*/
+.justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
+.justify-center{justify-content: center;}/*para centrar los divs y demas*/
+.justify-end{justify-content: flex-end;}
+.justify-around{justify-content: space-around;}
+.align-items{align-items: center;}
+.order-aca{order: 2;}
+.f-grow1{flex-grow: 1;}
+.f-growp{
+    flex-grow: 1;
+    padding: 0%;
+}
+.f-grow4{flex-grow: 4;}
+.f-wrap{flex-wrap: wrap;}
+.f-wrapno{flex-wrap: nowrap;}
+.f-column{flex-direction: column;}
+.f-row{flex-direction: row;}
+.f-start{align-content: flex-start;}
+.f-direction{flex-direction: row;}
+.a-content{align-content: flex-end;}
+.j-start{justify-content: flex-start;}
+.a-end{align-items: flex-end;}
+
+.header-a-caja{
+    background-color: none;
+
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 460px) {
+    /*VERSION MOBILE*/
+    #main-desktop{
+        display: none;
+    }
+    #header-mobile{
+        display: initial;
+
+    }
+    #header-desktop{
+        display: none;
+    }
+
+    .header-mobile{
+        background-color: white;
+        padding: 0 4%;
+        height: 50px;
+    }
+
+    /*BOTON HAMBURGUESA*/
+    /* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
+        background-color: white;
+        border: none;
+        margin: 0px;
+
+    }
+    button#menu:focus + nav#superior {
+        /* Si es pulsado el boton, mostramos el nav.
+        Esto lo puedo hacer porque adquiere el foco. */
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+    
+    nav#superior ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav#superior ul a {
+        display: block;
+        width: 8em;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+    
+    nav#superior ul a:hover {
+        background: lightgray;
+    }
+    
+
+	nav#superior {
+        display: none;
+    }
+	nav#superior ul {
+        flex-direction: column;
+        position: absolute;
+    }
+
+    nav#superior ul a {
+        display: block;
+        width: 8em;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: .3em 0;
+        text-align: center;
+        color: black;
+        background: white;
+        transition: 1s all;
+    }
+
+    /*FIN BOTON HAMBURGUESA*/
+
+    /*SE OCULTAN TODOS LOS MENUS QUE NO SE DEBEN VER*/
+    .div-hm{
+        display: none;
+    }
+
+    
+    .products-links{
+        display: none;
+    }
+
+    /*PANEL DE BUSQUEDA*/
+    .search{
+        padding: 3%;
+        padding-top: 10px;
+        background-color: lightgray;
+        height: 30px;
+        align-items: center;
+        box-sizing: content-box;
+    }
+    
+    .search input{
+        color: #222;
+        font-size: 1em;
+        padding: 0 30px 0 10px;
+        border-radius: 3px;
+        width: 100%;
+        height: 30px;
+        border: none;
+        vertical-align: middle;
+    }
+    
+    .search .icon-search{
+        position: relative;
+        color: grey;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        height: 30px;
+        padding-right: 15px;
+    }
+    
+    header a{
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .logo{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+
+ /*-----------HASTA ES EL HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+ /*----Inicio main Mobile----*/
+ .detail{
+     width: 100%;
+    flex-wrap: wrap;
+ }
+ .detail .container{
+    width: 100%;
+    margin: 2px;
+    background-color: lightgray;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px;
+ }
+ .detail .container .mini-ropa{display: none;}
+ .detail .container .mob-none{display: none;}
+
+ .ruta{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+ .titulo{font-size: 20px; font-weight: bold;}
+ .precio{font-size: 18px; margin-top: 5px;}
+ .ropa1{
+     width: 80%;
+     background-color: white;
+    margin-bottom: 10px;
+    margin-left: 10%;    
+}
+
+
+ .detail .container img{
+    width: 100%;
+    max-height: 200px;
+    height: 50%;
+    padding: 5px;
+ }
+ .detail .container p{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+ }
+ .detail .container .m-top .img-vieron{
+     width: 30%;
+ }
+ .boton-desc{
+    padding-top: 2px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 16px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ .boton-med{
+    padding-top: 2px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 16px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .botoncompra {
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+ }
+ .tb-inter{text-align: center;}
+
+.m-top{
+    height: 70%;
+    margin-bottom: -4px;
+}
+
+.m-top .conteiner-vieron img{
+    width: 30%;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.interest{
+    height: 100%;
+}
+
+
+
+ /*----Fin del main mobile---- */
+
+    .footer{
+        background-color:#272727;
+        color: #ddd;
+        margin-top:2%;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+
+    .footer .forma-pago{
+        margin-top: 15px;
+
+    }
+
+    .footer .forma-pago img{
+        width: 200px;
+        height: 150px;
+        margin-top: 5px;
+    }
+
+    .footer .redes{
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .footer .redes img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .imagenes-redes {
+        margin-top: 10px;
+    }
+
+    .copy{
+        font-size: 12px;
+        background-color: black;
+        text-align: left;
+        height: 20px;
+        color: #ddd;
+
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 460px){
+    /*ESTILOS PARA DESKTOP*/
+    #main-mobile{
+        display: none;
+    }
+    button#menu {
+        /* Ocultamos el boton en escritorio */
+        display: none;
+    }
+
+    #header-mobile{
+        display: none;
+    }
+    #header-desktop{
+        display: initial;
+        width: 80%;
+        margin-bottom: 0;
+    }
+    header{
+        background-color: white;
+        padding: 0 4% 0 4%;
+
+    }/*color de fondo y tamanio, se quita cuando este el header completo */
+    .contenedor-header{
+        height: 50px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .search{
+        background-color:white;
+        height: 30px;
+        align-items: center;
+        margin-left: 100px;
+        box-sizing: content-box;
+        border: 1px solid lightgray;
+        border-radius: 1px;
+    }
+    
+    .search input{
+        color: #222;
+        font-size: 15px;
+        padding: 0 00px 0 15px;
+        border: none;
+        width: 100%;
+        height: 30px;
+    }
+    
+    .search .icon-search{
+        position: relative;
+        color: grey;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        height: 30px;
+        padding-right: 5px;
+
+    }
+
+    .logo img{
+        width: 30%;
+        margin-left: 28%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .header-a-caja{
+        background-color: none;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+
+    .links-login a{
+        margin-left: 20px;
+    }
+
+    .links-login a:nth-child(3){
+        margin-right: 40px;
+    }
+
+    /*barra hombres mujeres color y centrado */
+    .div-hm{
+        background-color: black;
+        height: 30px;
+        justify-content: center;
+    }
+
+    .div-hm .div-hm-h a{
+        margin-left: 4px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        width: 100px;
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 6px;
+    }
+    .div-hm .div-hm-m a{
+            margin-left: 4px;
+            text-align: center;
+            color: white;
+            background-color: none;
+            width: 100px;
+            position: relative;
+            height: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 6px;
+    
+    }/*barra hombres y mujeres color links */
+    
+    .div-hm .div-hm-m:hover a{
+        background-color: lightgray;
+        color: black;
+    }
+
+    .sections{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .sections a{
+        margin-left: 50px;
+    }
+
+    .sections a:nth-child(1){
+        margin-left: 90px;
+    }
+
+ /*------ HASTA ACA ES ELL  HEADER PARA REPLICAR EN LAS DEMAS PAGINAS*/
+
+ /* Main desktop*/
+ main{
+    width: 90%;
+    margin: 10px auto;
+ }
+.w-ropa20{
+    width: 20%;
+}
+.w-foto40{
+    width: 40%;
+}
+.w-desc40{
+    width: 40%;
+}
+.w-bot60{
+    width: 60%;
+}
+.referencias{
+    height: 100%;
+}
+.m-topphoto{
+    margin-bottom: 20px;
+}
+.o-user{margin-top: 15px;}
+ .photo{
+     padding-left: 0%;
+     height: 350px;
+}
+ .ruta{
+    margin-left: 3%;
+    margin-bottom: 20px; 
+    margin-left: 8%;
+ }
+ .alt-div{height: 200px;}
+ .mini{
+     margin-left: 4%;
+     height: 350px;
+}
+ .mini .mini-ropa{width: 53%;
+    height: 110px;
+    margin-bottom: 7px;
+}
+ .p-right{padding-right: 130px;}
+
+.alt-alt{
+    width: 100%;
+}
+ .p-centro{text-align: center;}
+ .products-card .image-interest{width: 70%;}
+
+ .products-card{
+    width: 20%;
+    height: 30%;
+    background-color: lightgray;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+ }
+
+ .img-vieron{
+    width: 27%;
+    display: block;
+ }
+ /*Boton descripcion y medidas*/
+ .boton-desc{
+    padding: 20px 0px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    margin: auto;
+    margin-bottom: 1px;
+    color: white;
+ }
+
+ .derecha-desc{margin-left: 28%;}
+ .derecha-med{margin-left: 61%;}
+  hr{margin-top: 10px; color: black;}
+ .cont{margin-top: 10px;}
+ .referencias p{margin-bottom: 10px;}
+ .referencias .m-top{margin-top: 50px;}
+ .botones p{margin-bottom: 0%;}
+
+ .botoncompra {
+    padding: 4px 4px;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    
+ }
+ .m-tope{
+     margin-top: 8px;
+ }
+ .tb-inter{text-align: center; margin-top: 20px; margin-bottom: 20px;font-size: 18px;}
+
+
+ /* Aca termina el main desktop*/
+
+
+ /* Footer */
+ .footer{
+    background-color:#272727;
+    color: #ddd;
+    margin-top: 5px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    vertical-align: middle;
+
+ } 
+
+
+ .footer .forma-pago{
+    margin-top: 15px;
+
+ }
+
+ .footer .forma-pago img{
+    width: 200px;
+    height: 150px;
+    margin-top: 5px;
+ }
+
+ .footer .redes{
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+ }
+
+ .footer .redes img{
+    width: 50px;
+    height: 50px;
+ }
+
+ .footer .imagenes-redes {
+    margin-top: 10px;
+ }
+
+ .copy{
+    font-size: 12px;
+    background-color: black;
+    text-align: left;
+    height: 20px;
+    color: #ddd;
+
+ }
+
+
+ }
+
+

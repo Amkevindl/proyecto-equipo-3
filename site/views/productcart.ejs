@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="/stylesheets/productCart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <div class="div-hm d-flex">
+        <div class="div-hm-h dflex">
+            <a href="/">Hombres</a>
+        </div>
+        <div class="div-hm-m dflex">
+            <a href="#">Mujeres</a>
+        </div>
+    </div>
+
+    <!--HEADER MOBILE-->
+
+    <header id="header-mobile" class="d-flex f-column">
+        <div class="header-mobile d-flex justify-between align-items">
+            <button id="menu"><i class="fas fa-bars"></i></button>
+            <nav id="superior">	
+                <ul>
+                    <li><a href="#">Indumentaria</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+
+
+            <a href="/login"><i class="fas fa-user"></i></a>
+
+
+            <a href="/"><img class="logo" src="img/logo.PNG" alt="logo"></a>
+
+
+            <a href=""><i class="fas fa-heart"></i></a>
+
+            <a href="/productcart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div>
+            <div class="search">
+                <form class="d-flex icon-search" id="form-busqueda" action="">
+                    <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    
+    </header>
+
+    <!--HEADER DESKTOP-->
+
+    <header id="header-desktop">
+        <div class="contenedor-header d-flex align-items">        
+            <!--cuadro de busqueda-->
+            <div class="search f-grow1">
+                <form class="d-flex icon-search" id="form-busqueda" action="">
+                    <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <!--cuadro de busqueda-->
+    
+            <div class="logo f-grow1">
+                <a href="/"><img src="img/logo.PNG" alt="Logo pilcha"></a>
+            </div>
+    
+            <div class="links-login d-flex header-a-caja f-grow1">
+                <!--<a href="">Log in <i class="far fa-user-circle"></i></a>-->
+                <a href="/login">Ingresá <i class="far fa-user-circle"></i></a>
+                <a href=""><i class="fas fa-heart"></i></a>
+                <a href="/productcart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <!--contenedor del header divido en tres secciones-->
+        <nav class="sections d-flex justify-between">
+            <div class="d-flex nav-desktop f-grow4">
+                <a href="#">INDUMENTARIA</a>
+                <a href="#">ACCESORIOS</a>
+                <a href="#">CALZADO</a>
+                <a href="#">MARCAS</a>
+                <a href="#">KIDS</a>
+                <a href="#">SALE</a>
+            </div>
+            <div class="justify-end f-grow1">
+                <a href="#">MIS COMPRAS</a>
+                <a href="#">HISTORIAL</a>
+            </div>
+        </nav>
+        </header>
+
+    <main class="main-body f-column">
+        <p class="titulo">Carrito de compras</p>
+        <!--BARA DE ESTADO DE COMPRA-->
+        <div class="barra-progreso">
+            <ol class="progress" data-steps="4">
+                <li class="done">
+                <span class="name">Agregado al carrito</span>
+                <span class="step"><span>1</span></span>
+                </li>
+                <li class="active">
+                <span class="name">Checkout carrito</span>
+                <span class="step"><span>2</span></span>
+                </li>
+                <li>
+                <span class="name">Pago</span>
+                <span class="step"><span>3</span></span>
+                </li>
+                <li>
+                <span class="name">Entregado</span>
+                <span class="step"><span>4</span></span>
+                </li>
+            </ol>
+        </div>
+
+
+        <!-- cuadro de detalle del producto-->
+        <div class="producto d-flex f-wrap justify-between mb-1 linea-gris">
+            <div class="d-flex bckg-blue photo">
+                <img src="img/ropa1.jpg">
+            </div>
+            <div class="contenedor-producto justify-center ptb-10">
+                <div class="descrsup d-flex f-wrap ">
+                    <div class="descrsupleft w-70 d-flex f-column justify-between">
+                        <p class="txt-bold"> Sweater estampado floral gris </p>
+                        <p> Rapsodia </p>
+                        <p> Talle: M </p>
+                    </div>
+                </div>
+                <div class="descrsupright w-29 d-flex">
+                    <p>Cantidad:</p>
+                    <select name="cantidad" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+                <div class="descrinf d-flex f-wrap justify-between">
+                    <div class="descrinfleft w-100">
+                        <p> $2.550 </p>
+                    </div>
+                </div>
+
+                <div class="botones-mobile d-flex f-wrap justify-center">
+                    <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                    <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+                </div>
+                
+            </div>
+            <div class="botones-desktop d-flex f-column">
+                <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+            </div>
+
+        </div>
+
+        <div class="producto d-flex f-wrap justify-between mb-1 linea-gris">
+            <div class="d-flex bckg-blue photo">
+                <img src="img/ropa3.jpg">
+            </div>
+            <div class="contenedor-producto justify-center ptb-10">
+                <div class="descrsup d-flex f-wrap ">
+                    <div class="descrsupleft w-70 d-flex f-column justify-between">
+                        <p class="txt-bold"> Adidas Buzo Logo hdy </p>
+                        <p> Adidas </p>
+                        <p> Talle: M </p>
+                    </div>
+                </div>
+                <div class="descrsupright w-29 d-flex">
+                    <p>Cantidad:</p>
+                    <select name="cantidad" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+                <div class="descrinf d-flex f-wrap justify-between">
+                    <div class="descrinfleft w-100">
+                        <p> $2.126 </p>
+                    </div>
+                </div>
+
+                <div class="botones-mobile d-flex f-wrap justify-center">
+                    <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                    <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+                </div>
+                
+            </div>
+            <div class="botones-desktop d-flex f-column ">
+                <button type="submit" class="eliminar-guardar"> Eliminar producto</button>
+                <button type="submit" class="eliminar-guardar"> Guardar para después</button>
+            </div>
+
+        </div>
+        <!-- cuadro de tembien podria interesarte-->
+        <div class="podria d-flex h-21 mb-1 f-column">
+            <p class="txt-interesarte"> También podría interesarte</p>
+            <div class="contenedor-interes d-flex justify-around">
+                <article class="products-card d-flex f-column align-center">
+                    <img class="image-interest" src="img/ropa1.jpg">
+                    <p>Buzo Hoodie Capucha</p>
+                    <p class="precio">$2.849</p>
+                </article>
+                <article class="products-card d-flex f-column align-center">
+                    <img class="image-interest" src="img/ropa2.jpg">
+                    <p>Buzo Lila Cante Pido Unillama</p>
+                    <p class="precio">$3.231</p>
+                </article>  
+                <article class="products-card d-flex f-column align-center">
+                    <img class="image-interest" src="img/ropa3.jpg">
+                    <p>Adidas Buzo logo hdy</p>
+                    <p class="precio">$2.126</p>
+                </article>
+                <article class="products-card d-flex f-column align-center">
+                   <img class="image-interest" src="img/ropa5.jpg">
+                   <p>Adidas Buzo Logo rayas</p>
+                   <p class="precio">$9.241</p>
+                </article>
+            </div>
+        </div>
+        <!-- cuadro resumen de compra-->
+        <div class="resumen w-100 h-22 ptb-5 d-flex f-wrap justify-between">
+            <p class="txt-bold w-100" > Resumen de la compra</p>
+            <p class="checkout"> Subtotal</p>
+            <p class="checkout precioscheckout" > $4.676 </p>
+            <p class="checkout"> Descuento:</p>
+            <p class="checkout precioscheckout"> -$450 </p>
+            <p class="checkout txt-bold"> Total:</p>
+            <p class="checkout precioscheckout txt-bold"> $4.226 </p>
+            <button type="submit" class="continuarcompra align-center"> Continuar con la compra </button>
+        </div>
+    </main> 
+    
+    <footer class="footer d-flex">
+        <div class="forma-pago d-flex f-column align-items">
+            <p>MEDIOS DE PAGO</p>
+            <img src="img/pagos.png" alt="pagos">
+        </div>
+        <div class="redes d-flex f-column">
+            <p>SEGUINOS!</p>
+            <div class="imagenes-redes d-flex justify-center align-items">
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+            <p>NUESTRO MAIL</p>
+            <a href="#"><img src="img/mail.png" alt="mail"></a>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>Proyecto Grupo 3 - 2020 ©</p>
+    </div>
+</body>
+</html>

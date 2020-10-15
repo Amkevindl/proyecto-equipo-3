@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilcha</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <div class="div-hm d-flex">
+        <div class="div-hm-h dflex">
+            <a href="/">Hombres</a>
+        </div>
+        <div class="div-hm-m dflex">
+            <a href="#">Mujeres</a>
+        </div>
+    </div>
+
+    <!--HEADER MOBILE-->
+
+    <header id="header-mobile" class="d-flex f-column">
+        <div class="header-mobile d-flex justify-between align-items">
+            <button id="menu"><i class="fas fa-bars"></i></button>
+            <nav id="superior">	
+                <ul>
+                    <li><a href="#">Indumentaria</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+
+
+            <a href="/login"><i class="fas fa-user"></i></a>
+
+
+            <a href="/"><img class="logo" src="img/logo.PNG" alt="logo"></a>
+
+
+            <a href=""><i class="fas fa-heart"></i></a>
+
+            <a href="/productcart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div>
+            <div class="search">
+                <form class="d-flex icon-search" id="form-busqueda" action="">
+                    <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    
+    </header>
+
+    <!--HEADER DESKTOP-->
+
+    <header id="header-desktop">
+    <div class="contenedor-header d-flex align-items">        
+        <!--cuadro de busqueda-->
+        <div class="search f-grow1">
+            <form class="d-flex icon-search" id="form-busqueda" action="">
+                <input type="text" placeholder="Busqueda"><button class="icon-search" type="submit" value="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <!--cuadro de busqueda-->
+
+        <div class="logo f-grow1">
+            <a href="/"><img src="img/logo.PNG" alt="Logo pilcha"></a>
+        </div>
+
+        <div class="links-login d-flex header-a-caja f-grow1">
+            <!--<a href="">Log in <i class="far fa-user-circle"></i></a>-->
+            <a href="/login">Ingresá <i class="far fa-user-circle"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href="/productcart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <!--contenedor del header divido en tres secciones-->
+    <nav class="sections d-flex justify-between">
+        <div class="d-flex nav-desktop f-grow4">
+            <a href="#">INDUMENTARIA</a>
+            <a href="#">ACCESORIOS</a>
+            <a href="#">CALZADO</a>
+            <a href="#">MARCAS</a>
+            <a href="#">KIDS</a>
+            <a href="#">SALE</a>
+        </div>
+        <div class="justify-end f-grow1">
+            <a href="#">MIS COMPRAS</a>
+            <a href="#">HISTORIAL</a>
+        </div>
+    </nav>
+    </header>
+
+
+    <div class="slider d-flex justify-center">
+        <img src="img/slider1.jpg">
+    </div>
+        <div id="destacados-mobile" class="destacados d-flex align-items">
+            <p class="f-grow4">DESTACADOS</p><button class="f-grow1" id="menu-destacados"><i class="fas fa-chevron-down"></i></button>
+            <nav id="nav-destacados">	
+                <ul>
+                    <li><a href="#">DESTACADOS</a></li>
+                    <li><a href="#">MIS TALLES</a></li>
+                    <li><a href="#">ÚLTIMOS INGRESOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="destacados-desktop" >
+        <nav class="d-flex justify-around">	
+                <a href="#">DESTACADOS</a>
+                <a href="#">MIS TALLES</a>
+                <a href="#">ÚLTIMOS INGRESOS</a>
+        </nav>
+    </div>
+
+
+    <section class="products d-flex f-wrap align-items justify-center">
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa1.jpg"></a>
+            <p>Buzo Hoodie Capucha</p>
+            <p class="precio">$2.849</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa2.jpg"></a>
+            <p>Buzo Lila Cante Pido Unillama</p>
+            <p class="precio">$3.231</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa3.jpg"></a>
+            <p>Adidas Buzo logo hdy</p>
+            <p class="precio">$2.126</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa4.jpg"></a>
+           <p>Pantalón de hombre Tadeus</p>
+           <p class="precio">$9.241</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa5.jpg"></a>
+            <p>Canguro Linear adidas</p>
+            <p class="precio">$4.499</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa6.jpg"></a>
+            <p>Jordan tenis x Travis Scott Air Jordan</p>
+            <p class="precio">$3.574</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa7.jpg"></a>
+            <p>Buzo De Frisa Idiot - Aesthetic - Japon - Hoodie</p>
+            <p class="precio">$1.850</p>
+        </article>
+        <article class="products-card d-flex f-column">
+            <a href="/productdetail"><img src="img/ropa8.jpg"></a>
+           <p>Jumper Jean Elastizados Jardinero</p>
+           <p class="precio">$2.950</p>
+        </article>
+    </section>
+    <footer class="footer d-flex">
+        <div class="forma-pago d-flex f-column align-items">
+            <p>MEDIOS DE PAGO</p>
+            <img src="img/pagos.png" alt="pagos">
+        </div>
+        <div class="redes d-flex f-column">
+            <p>SEGUINOS!</p>
+            <div class="imagenes-redes d-flex justify-center align-items">
+                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+            <p>NUESTRO MAIL</p>
+            <a href="#"><img src="img/mail.png" alt="mail"></a>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>Proyecto Grupo 3 - 2020 ©</p>
+    </div>
+</body>
+</html>

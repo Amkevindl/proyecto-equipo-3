@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+    <main class="d-flex f-wrap">
+
+        <div class="back-left w-60">
+
+            <div class="p-35">
+                <a href="/"><img src="/img/logo.png" alt="logo" class="logo-size"></a>
+            </div>
+            <div class="d-flex justify-center align-center h-80">
+                <div class="square">
+                    <p class="txt-agn pb-30 txt-welcome">¡Bienvenid@!</p>
+                    <form action="/" method="get">
+                    <p class="p-15"><label for="e-mailusuario" > E-mail o usuario</label></p>
+                    <p class="pb-30"><input type= "text" name="e-mailusuario" id="e-mailusuario" class="datos"></p>
+                    <p class="p-15"><label for="contraseña"> Contraseña</label></p>
+                    <p class="p-15"><input type="password" name="contraseña" id="contraseña" class="datos"></p>
+                    <a href="#" class="txt-password links"> Olvidé mi contraseña</a>
+                    <p class="txt-password pt-15"><input type="checkbox" name="recordarme" value="recordarme"> Recordarme </p>
+                    <p class="pt-30 p-15 txt-agn"><button type="submit"> Continuar</button></p>
+                    </form>
+                    <form action="/register" method="get">
+                    <p class="txt-agn"><button type="submit">Creá tu cuenta</button></p>
+                    </form>
+                </div>
+            </div>
+        
+        <div class="position-img img-container randomimg w-40"> 
+        </div>
+    </main>
+
+</body>
+</html>
