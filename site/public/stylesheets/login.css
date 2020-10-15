@@ -103,7 +103,7 @@ button:hover {
 
 .randomimg {
     background-size: cover;
-    background-image: url("../img/Fondo1.PNG");
+    background-image: url("../images/Fondo1.PNG");
     background-position: center;
     min-height: 400px;
 }
