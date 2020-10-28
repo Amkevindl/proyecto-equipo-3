@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}/*bordes y demas*/
+
+input:focus{outline: 0;}/*quita recuadro azul de los imputs*/
+a{text-decoration: none; color: black;}/*sin subrayado en links*/
+
+.d-flex{display: flex;}/*Flex box*/
+.justify-between{justify-content: space-between;}/*separacion de los divs cimetricamente"*/
+.justify-center{justify-content: center;}/*para centrar los divs y demas*/
+.justify-end{justify-content: flex-end;}
+.justify-around{justify-content: space-around;}
+.align-items{align-items: center;}
+.f-grow1{flex-grow: 1;}
+.f-grow4{flex-grow: 4;}
+.f-wrap{flex-wrap: wrap;}
+.f-column{flex-direction: column;}
+.f-row{flex-direction: row;}
+
+.header-a-caja{
+    background-color: none;
+
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 460px) {
+    /*mobile*/
+
+.div-hm{
+    display: none;
+}
+
+.header-mobile{
+    margin-top: 5px;
+}
+
+.titulo{
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.form{
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.form p{
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+.form input{
+    width: 80%;
+    height: 30px;
+}
+
+.form select{
+    width: 80%;
+    height: 30px;
+}
+
+.form .boton{
+    height: 30px;
+    width: 120px;
+    margin-bottom: 6px;
+}
+
+
+}
+@media (min-width: 460px){
+/*deskrop*/
+.form{
+    padding: 30px;
+    margin-left: 10px;
+}
+
+
+}

@@ -3,19 +3,17 @@ module.exports = {
     //listar productos
     //http://localhost:3000/products
     
-    list : function(req, res){
-        res.send('listado de categoria')
-    },
+
     
     //alta productos
     //http://localhost:3000/products/create
 
-    edit : function(req, res){
-        res.send(productEdit)
-    },
-    
     //editar productos
     //http://localhost:3000/products/:id/edit
+
+    edit : function(req, res){
+        res.render("products/productEdit")
+    },
     
     //borrar productos
     //http://localhost:3000/products/:id
@@ -24,7 +22,7 @@ module.exports = {
     //http://localhost:3000/products/:id
     
     show : function(req, res){
-        res.send('detalle de la categoria')
+        res.render("products/productDetail")
     },
     
     

@@ -23,7 +23,7 @@ router.get('/productcart', function(req, res, next) {
 
 /* GET productdetail */
 router.get('/productdetail', function(req, res, next) {
-  res.render('productdetail',);
+  res.render('/products/productdetail',);
 });
 
 module.exports = router;

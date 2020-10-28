@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+    <link rel="stylesheet" href="/stylesheets/productEdit.css">
+</head>
 
-<% include ./partials/head.ejs %>
 
 <body>
 
-    <% include ./partials/header.ejs %> 
+    <% include ../partials/header.ejs %> 
+    <div>
+    <h1 class="titulo">Edición de productos</h1><hr>
+    </div>
+    <div class="">
+        <form class="form" action="/" method="get">
+            <p class=""><label for="name">Nombre del producto</label></p>
+            <p class=""><input type="text" name="name" id="name" class="datos"></p>
+            <p class=""><label for="description"> Descripción del producto</label></p>
+            <p class=""><textarea name=""description id="description" cols="28" rows="6"></textarea>
+            <p class=""><label for="image"> Agregar imagenes</label></p>
+            <button class="boton" type="submit">Buscar imagen</button>
+            <p class=""><label for="color"> Color</label></p>
+            <p class=""><input type="text" name="color" id="color" class="datos"></p>
+            <p class=""><label for="size"> Talle</label></p>
+            <p class=""><select name="size" id="size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select></p>
+            <p class=""><label for="size">Estado</label></p>
+            <p class=""><select name="condition" id="condition">
+                <option value="new">Nuevo</option>
+                <option value="used">Usado</option>
+                <option value="details">Usado con detalles</option>
+            </select></p>
+            <p class=""><label for="price">Precio</label></p>
+            <p class=""><input type="numer" name="price" id="price" class="datos"></p>
+            <p><button class="boton" type="submit"> Continuar</button></p>
+        </form>
 
-    <h1>Edición de productos</h1>
-
-    <% include ./partials/footer.ejs %> 
+    </div>
+    <% include ../partials/footer.ejs %> 
 </body>
 </html>
