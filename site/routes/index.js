@@ -21,9 +21,4 @@ router.get('/productcart', function(req, res, next) {
   res.render('productcart',);
 });
 
-/* GET productdetail */
-router.get('/productdetail', function(req, res, next) {
-  res.render('/products/productdetail',);
-});
-
 module.exports = router;

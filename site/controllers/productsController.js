@@ -8,6 +8,10 @@ module.exports = {
     //alta productos
     //http://localhost:3000/products/create
 
+    new : function(req, res){
+        res.render("products/productCreate")
+    },
+
     //editar productos
     //http://localhost:3000/products/:id/edit
 
@@ -22,7 +26,7 @@ module.exports = {
     //http://localhost:3000/products/:id
     
     show : function(req, res){
-        res.render("products/productDetail")
+        res.render("products/productdetail")
     },
     
     
