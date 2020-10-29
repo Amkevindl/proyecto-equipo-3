@@ -50,6 +50,7 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 
 .form p{
     margin-bottom: 5px;
+    margin-top: 5px;
     font-weight: bold;
     
 }
@@ -87,10 +88,50 @@ a{text-decoration: none; color: black;}/*sin subrayado en links*/
 }
 @media (min-width: 460px){
 /*deskrop*/
-.form{
-    padding: 30px;
-    margin-left: 10px;
+.titulo{
+    margin-top: 8px;
+    margin-left: 80px;
 }
 
+.form{
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.form p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    
+}
+
+.form input{
+    width: 20%;
+    height: 30px;
+}
+
+.form select{
+    width: 20%;
+    height: 30px;
+}
+
+.form .boton{
+    height: 30px;
+    width: 120px;
+    margin-bottom: 6px;
+    width: 120px;
+    margin-bottom: 3px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#212121;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+.form .boton-next{
+    margin-top: 20px;
+}
 
 }

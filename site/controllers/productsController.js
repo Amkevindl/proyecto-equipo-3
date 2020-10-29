@@ -8,7 +8,7 @@ module.exports = {
     //alta productos
     //http://localhost:3000/products/create
 
-    new : function(req, res){
+    create : function(req, res){
         res.render("products/productCreate")
     },
 
